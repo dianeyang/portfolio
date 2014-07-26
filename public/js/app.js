@@ -19,15 +19,15 @@ App.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
       .when('/about', {
-        templateUrl: 'about.html',
+        templateUrl: 'partials/about.html',
         controller: 'mainController'
       })
       .when('/resume', {
-        templateUrl: 'resume.html',
+        templateUrl: 'partials/resume.html',
         controller: 'mainController'
       })
       .when('/contact', {
-        templateUrl: 'contact.html',
+        templateUrl: 'partials/contact.html',
         controller: 'mainController'
       })
   }]);
