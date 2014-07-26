@@ -13,7 +13,7 @@ function filterProjects(filter) {
   $('#projects ul').isotope({filter: filter});
 }
 
-var App = angular.module('portfolio', ['ngRoute']);
+var App = angular.module('portfolio', []);
 
 App.config(['$routeProvider',
   function($routeProvider) {
