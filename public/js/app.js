@@ -19,15 +19,21 @@ App.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
       .when('/about', {
-        templateUrl: '/public/about.html',
+        templateUrl: 'about.html',
+        controller: 'mainController'
       })
       .when('/resume', {
-        templateUrl: '/public/resume.html',
+        templateUrl: 'resume.html',
+        controller: 'mainController'
       })
       .when('/contact', {
-        templateUrl: '/public/contact.html',
+        templateUrl: 'contact.html',
+        controller: 'mainController'
       })
   }]);
+
+App.controller('mainController', function($scope) {
+})
 
 App.directive('isotopeFiltering', function() {
     return {
