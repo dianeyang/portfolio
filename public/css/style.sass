@@ -27,6 +27,7 @@ body
 
 a
 	text-decoration: none
+	color: inherit
 
 .container
 	max-width: 960px
@@ -45,6 +46,9 @@ ul.small-spaced-links
 		font-size: 13px
 		letter-spacing: 1px
 		color: $smallCapsColor
+
+	a:hover
+		color: $bodyTextColor
 
 	&.left li
 		padding-left: 0
@@ -89,9 +93,6 @@ ul.small-spaced-links
 
 		&.selected
 			border-bottom: 3px solid $bodyTextColor
-			color: $bodyTextColor
-
-		&:hover
 			color: $bodyTextColor
 
 #projects
