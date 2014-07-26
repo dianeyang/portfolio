@@ -21,6 +21,9 @@ a {
   text-decoration: none;
   color: inherit; }
 
+p {
+  padding-bottom: 1.5em; }
+
 .container {
   max-width: 960px;
   margin: 0 auto; }
@@ -64,7 +67,7 @@ ul.small-spaced-links.right li {
   #header #navigation {
     float: right; }
 
-#mini-bio {
+#mini-bio, #long-bio {
   padding: 80px 0 96px 0; }
 
 #filters ul li {

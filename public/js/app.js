@@ -1,8 +1,8 @@
 'use strict';
 
-function filterProjects(filter) {
-  $('#filters ul li a').removeClass('selected');
-  $('#filters ul li #' + filter).addClass('selected');
+function filterProjects(filter, container, filterClass) {
+  $(filterClass).removeClass('selected');
+  $(filterClass + '#' + filter).addClass('selected');
 
   if(filter === 'all') {
     filter = '*';
@@ -10,14 +10,14 @@ function filterProjects(filter) {
     filter = '.' + filter
   }
 
-  $('#projects ul').isotope({filter: filter});
+  $(container).isotope({filter: filter});
 }
 
-function loadOneByOne() {
-  $('#projects ul li.project')
+function loadOneByOne(selector) {
+  $(selector)
     .hide()
     .each(function (index) {
-       $(this).delay(280*index).fadeIn(300);
+       $(this).delay(200*index).fadeIn(400);
     });
 }
 
@@ -27,7 +27,7 @@ App.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'partials/work.html'
+        templateUrl: 'partials/work.html',
       })
       .when('/resume', {
         templateUrl: 'partials/resume.html',
@@ -40,20 +40,48 @@ App.config(['$routeProvider',
       })
   }]);
 
-App.controller('mainController', function($scope) {
-})
+App.controller('mainController', ['$scope', function($scope) {}])
 
 App.directive('isotopeFiltering', function() {
     return {
-        link: function() {
-          filterProjects('all');
+        link: function($scope, element, attrs) {
+          // init isotope
+          filterProjects('all', element, attrs.filters);
 
-          loadOneByOne();
-
+          // listen to filters
           $('#filters').on('click', 'ul li', function() {
             var filter = $(this).find('a').attr('id');
-            filterProjects(filter);
+            filterProjects(filter, element, attrs.filters);
+          });
+
+          // remove event handlers upon destroy
+          $(element).on('$destroy', function() {
+            $(element).isotope('destroy');
           });
         }
     };
 });
+
+// fade in the children of the element one by one
+App.directive('fadeInSequence', function() {
+  return {
+    link: function($scope, element, attrs) {
+      $(element)
+      .children()
+      .hide()
+      .each(function (index) {
+         $(this).delay(100*index).fadeIn(300, 'linear');
+      });
+    }
+  }
+})
+
+App.directive('fadeFromTop', function() {
+  return {
+    link: function($scope, element, attrs) {
+      $(element)
+      .css({opacity: 0, marginTop: '-=3px', paddingBottom: '+=3px'})
+      .animate({opacity: 1, marginTop: '+=3px', paddingBottom: '-=3px'}, {duration: 500})
+    }
+  }
+})
