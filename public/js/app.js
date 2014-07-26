@@ -18,9 +18,15 @@ var App = angular.module('portfolio', ['ngRoute']);
 App.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
-      .when('/', {
-       templateUrl : '/public/work.html',
-      });
+      .when('/about', {
+        templateUrl: '/public/about.html',
+      })
+      .when('/resume', {
+        templateUrl: '/public/resume.html',
+      })
+      .when('/contact', {
+        templateUrl: '/public/contact.html',
+      })
   }]);
 
 App.directive('isotopeFiltering', function() {
