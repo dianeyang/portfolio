@@ -28,12 +28,6 @@ a
 	max-width: 960px
 	margin: 0 auto
 
-	@media screen and (max-width: $break1)
-		padding: 0 30px
-
-	@media screen and (min-width: $break1+1) and (max-width: $break2)
-		padding: 0 40px
-
 ul.inline-list
 	li
 		display: inline
@@ -99,6 +93,21 @@ ul.small-spaced-links
 		width: 33.333%
 		height: 300px
 
+		&:nth-child(5n)
+			background-color: #FDF1CC
+
+		&:nth-child(5n+1)
+			background-color: #C6D6B8
+
+		&:nth-child(5n+2)
+			background-color: #987F69
+
+		&:nth-child(5n+3)
+			background-color: #E3AD40
+
+		&:nth-child(5n+4)
+			background-color: #FCD036
+
 		@media screen and (max-width: $break1)
 			width: 100%
 
@@ -107,13 +116,24 @@ ul.small-spaced-links
 
 
 @media screen and (min-width: 320px) and (max-width: $break1)
+	.container
+		padding: 0 30px
+
+	#header
+		padding-top: 30px
+
 	#about
 		padding: 40px 0 60px 0
+
+@media screen and (min-width: $break1+1) and (max-width: $break2)
+	.container
+		padding: 0 40px
 
 /* not desktop */
 @media screen and (max-width: $break1)
 	body
 		font-size: 20px
 
-	#header #navigation
-		display: none
+	#header
+		#navigation
+			display: none
