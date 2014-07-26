@@ -18,15 +18,6 @@ var App = angular.module('portfolio', ['ngRoute']);
 App.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
-      .when('/about', {
-        templateUrl: '/public/about.html',
-      })
-      .when('/resume', {
-        templateUrl: '/public/resume.html',
-      })
-      .when('/contact', {
-        templateUrl: '/public/contact.html',
-      })
       .when('/', {
        templateUrl : '/public/work.html',
       });
