@@ -13,6 +13,14 @@ function filterProjects(filter) {
   $('#projects ul').isotope({filter: filter});
 }
 
+function loadOneByOne() {
+  $('#projects ul li.project')
+    .hide()
+    .each(function (index) {
+       $(this).delay(280*index).fadeIn(300);
+    });
+}
+
 var App = angular.module('portfolio', ['ngRoute']);
 
 App.config(['$routeProvider',
@@ -39,6 +47,8 @@ App.directive('isotopeFiltering', function() {
     return {
         link: function() {
           filterProjects('all');
+
+          loadOneByOne();
 
           $('#filters').on('click', 'ul li', function() {
             var filter = $(this).find('a').attr('id');
