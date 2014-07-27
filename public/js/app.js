@@ -113,8 +113,8 @@ function loadOneByOne(selector) {
 
 var App = angular.module('portfolio', ['ngRoute', 'ngAnimate']);
 
-App.config(['$routeProvider',
-  function($routeProvider) {
+App.config(['$routeProvider', '$locationProvider',
+  function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'partials/work.html',
@@ -136,6 +136,10 @@ App.config(['$routeProvider',
       .otherwise({
         redirectTo: '/'
       })
+
+      if(window.history && window.history.pushState){
+        $locationProvider.html5Mode(true);
+      }
   }]);
 
 App.controller('ProjectsListController', ['$scope',
