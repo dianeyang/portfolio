@@ -93,9 +93,11 @@ var projects = [
 
 var appControllers = angular.module('appControllers', []);
 
-appControllers.controller('ProjectsListController', ['$scope',
-  function($scope) {
-    $scope.projects = projects;
+appControllers.controller('ProjectsListController', ['$scope', '$http',
+  function($scope, $http) {
+    $http.get('projects/projects.json').success(function(data) {
+      $scope.projects = data;
+    });
 
     $scope.filters = [
       {label: 'All Work', id: 'all'},
