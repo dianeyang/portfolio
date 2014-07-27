@@ -9,24 +9,15 @@
 <div id="filters" class="clearfix">
 	<div class="container">
 		<ul class="inline-list all-caps small-spaced-links left">
-			<li>
-				<a id="all">All Work</a>
-			</li>
-			<li>
-				<a id="code">Coding</a>
-			</li>
-			<li>
-				<a id="design">Graphic Design</a>
-			</li>
-			<li>
-				<a id="art">Art</a>
+			<li id="{{filter.id}}" ng-repeat="filter in filters" ng-click="doFilter($event)">
+				<a>{{filter.label}}</a>
 			</li>
 		</ul>
 	</div>
 </div>
 
 <div id="projects" class="clearfix">
-	<ul class="inline-list" isotope-filtering data-filters="#filters ul li a">
+	<ul class="inline-list" data-filters="#filters ul li a">
 		<li ng-repeat="proj in projects" class="project {{proj.type}}" staggered-fade-in>
 			<div class="inner">
 				<a href="projects/{{proj.slug}}"></a>
