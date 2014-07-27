@@ -190,9 +190,10 @@ App.directive('isotopeFiltering', function() {
 App.directive('staggeredFadeIn', ['$animate', function($animate) {
   return {
     link: function($scope, element, attrs) {
+        var index = $scope.$index+1;
         $(element)
-        .hide()
-        .delay(100*attrs.index).fadeIn(300, 'linear');
+          .hide()
+          .delay(100*index).fadeIn(300, 'linear');
       }
     }
   }
@@ -202,8 +203,8 @@ App.directive('fadeFromTop', function() {
   return {
     link: function($scope, element, attrs) {
       $(element)
-      .css({opacity: 0, marginTop: '-=3px', paddingBottom: '+=3px'})
-      .animate({opacity: 1, marginTop: '+=3px', paddingBottom: '-=3px'}, {duration: 500})
+        .css({opacity: 0, marginTop: '-=3px', paddingBottom: '+=3px'})
+        .animate({opacity: 1, marginTop: '+=3px', paddingBottom: '-=3px'}, {duration: 500})
     }
   }
 });
