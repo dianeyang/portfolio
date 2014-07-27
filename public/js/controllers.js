@@ -38,3 +38,21 @@ appControllers.controller('ProjectDetailController', ['$scope', '$routeParams', 
     $scope.project = Project.get({projectName: $routeParams.projectName}, function(phone) {});
   }
 ]);
+
+appControllers.controller('EmailFormController', ['$scope',
+  function ($scope) {
+    $scope.submitted = false;
+    $scope.submitForm = function() {
+      $scope.submitted = true;
+    };
+    $scope.hasError = function(field){
+      var selector = 'input[name=' + field + ']';
+      var invalid = ($scope.emailForm[field].$dirty && $scope.emailForm[field].$invalid)
+        || ($scope.submitted && $scope.emailForm[field].$invalid);
+
+      var blurred = !$(selector).is(':focus');
+
+      return invalid
+    };
+  }
+])

@@ -4,15 +4,20 @@
 			<p>
 				You can reach me at <a href="mailto:dianeyang@college.harvard.edu">dianeyang@college.harvard.edu</a>, or use the form below. You can also find me here:
 			</p>
+			<form novalidate name="emailForm" action="MAILTO:dianeyang@college.harvard.edu" method="post" enctype="text/plain" ng-submit="submitForm()">
+				<input type="text" name="name" placeholder="Name" ng-model="email.senderName" required>
+				<div class="error-message" ng-show="hasError('name')">I'd love to know your name.</div>
 
-			<form novalidate name="emailForm" action="MAILTO:dianeyang@college.harvard.edu" method="post" enctype="text/plain">
-				<input type="text" name="name" placeholder="Name" ng-model="email.senderName" ng-class="{touched: nameTouched}" ng-init="nameTouched = false" ng-focus="nameTouched = true" required>
+				<input type="email" name="email" placeholder="Email" ng-model="email.senderEmail"required>
+				<div class="error-message" ng-show="validEmail"> 
+			      I'll need a valid email to respond.
+			    </div>
 
-				<input type="email" name="emailAddress" placeholder="Email" ng-model="email.senderEmail"ng-class="{touched: emailTouched}" ng-init="emailTouched = false" ng-focus="emailTouched = true"  required>
+				<input type="text" name="subject" placeholder="Subject" ng-model="email.subject" required>
+				<div class="error-message" ng-show="hasError('subject')">Help me out with a subject line.</div>
 
-				<input type="text" name="subject" placeholder="Subject" ng-model="email.subject" ng-class="{touched: subjectTouched}" ng-init="subjectTouched = false" ng-focus="subjectTouched = true" required>
-
-				<textarea name="message" rows="7" placeholder="Message" ng-model="email.message" ng-class="{touched: messageTouched}" ng-init="messageTouched = false" ng-focus="messageTouched = true" required></textarea>
+				<textarea name="message" rows="7" placeholder="Message" ng-model="email.message" required></textarea>
+				<div class="error-message" ng-show="hasError('message')">What did you want to talk about?</div>
 
 				<input type="submit" value="Send">
 			</form>

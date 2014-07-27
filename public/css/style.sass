@@ -205,8 +205,11 @@ form[name='emailForm']
 		box-shadow: inset 0 0 6px rgba(0,0,0,0.2)
 		color: $darkGrey
 
-	input.ng-invalid.touched:not(:focus), textarea.ng-invalid.touched:not(:focus)
+	input.ng-invalid.ng-dirty:not(:focus), textarea.ng-invalid.ng-dirty:not(:focus)
 		box-shadow: inset 0 0 6px #FA787E
+
+	.error-message
+		font-size: 15px
 
 @media screen and (min-width: 320px) and (max-width: $break1)		
 	.container

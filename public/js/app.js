@@ -22,7 +22,8 @@ App.config(['$routeProvider', '$locationProvider',
         templateUrl: 'partials/about.html'
       })
       .when('/contact', {
-        templateUrl: 'partials/contact.html'
+        templateUrl: 'partials/contact.html',
+        controller: 'EmailFormController'
       })
       .when('/work/:projectName', {
         templateUrl: 'partials/details.html',
