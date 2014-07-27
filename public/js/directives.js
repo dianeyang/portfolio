@@ -2,7 +2,14 @@
 
 var appDirectives = angular.module('appDirectives', []);
 
-appDirectives.directive('isotopeContainer', function(Isotope, $log){
+appDirectives.directive('isotope', function () {
+  return function(scope, element, attrs) {
+    if (scope.$last){
+    }
+  };
+});
+
+appDirectives.directive('isotopeContainer', ['Isotope', function(Isotope){
   return {
     link: function(scope, elem, attrs) {
       scope.inited = false;
@@ -10,7 +17,6 @@ appDirectives.directive('isotopeContainer', function(Isotope, $log){
     },
     controller: function($scope) {
       this.isoInitOrRedraw = function(elem){
-        console.log($scope.thisEl);
         if ($scope.inited === false) {
           Isotope.init('#projects ul')
         }
@@ -18,7 +24,7 @@ appDirectives.directive('isotopeContainer', function(Isotope, $log){
       }
     },
   }
-})
+}])
 
 appDirectives.directive('filterProjects', function() {
   return {

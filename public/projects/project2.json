@@ -1,0 +1,8 @@
+{
+    "name": "project 2",
+    "slug": "project2",
+    "type": "art",
+    "description": "LALALA",
+    "photos": [],
+    "technologies": ["a","b","c"]
+}

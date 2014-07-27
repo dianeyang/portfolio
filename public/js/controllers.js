@@ -1,104 +1,10 @@
 'use strict';
 
-var projects = [
-  {
-    "name": "project 1",
-    "slug": "project1",
-    "type": "code",
-    "description": "lalala",
-    "photos": [],
-    "technologies": ["a", "b", "c"]
-  },
-  {
-    "name": "project 2",
-    "slug": "project2",
-    "type": "art",
-    "description": "lalala",
-    "photos": [],
-    "technologies": ["a","b","c"]
-  },
-  {
-    "name": "project 3",
-    "slug": "project3",
-    "type": "design",
-    "description": "lalala",
-    "photos": [],
-    "technologies": ["a","b","c"]
-  },
-  {
-    "name": "project 4",
-    "slug": "project4",
-    "type": "code",
-    "description": "lalala",
-    "photos": [],
-    "technologies": ["a","b","c"]
-  },
-  {
-    "name": "project 5",
-    "slug": "project5",
-    "type": "art",
-    "description": "lalala",
-    "photos": [],
-    "technologies": ["a","b","c"]
-  },
-  {
-    "name": "project 6",
-    "slug": "project6",
-    "type": "art",
-    "description": "lalala",
-    "photos": [],
-    "technologies": ["a","b","c"]
-  },
-  {
-    "name": "project 7",
-    "slug": "project7",
-    "type": "code",
-    "description": "lalala",
-    "photos": [],
-    "technologies": ["a","b","c"]
-  },
-  {
-    "name": "project 8",
-    "slug": "project8",
-    "type": "art",
-    "description": "lalala",
-    "photos": [],
-    "technologies": ["a","b","c"]
-  },
-  {
-    "name": "project 9",
-    "slug": "project9",
-    "type": "design",
-    "description": "lalala",
-    "photos": [],
-    "technologies": ["a","b","c"]
-  },
-  {
-    "name": "project 10",
-    "slug": "project10",
-    "type": "code",
-    "description": "lalala",
-    "photos": [],
-    "technologies": ["a","b","c"]
-  },
-  {
-    "name": "project 11",
-    "slug": "project11",
-    "type": "design",
-    "description": "lalala",
-    "photos": [],
-    "technologies": ["a","b","c"]
-  },
-]
-
 var appControllers = angular.module('appControllers', []);
 
-appControllers.controller('ProjectsListController', ['$scope', '$http',
-  function($scope, $http) {
-    $http.get('projects/projects.json').success(function(data) {
-      $scope.projects = data;
-    });
-
+appControllers.controller('ProjectsListController', ['$scope', 'Project',
+  function($scope, Project) {
+    $scope.projects = Project.query()
     $scope.filters = [
       {label: 'All Work', id: 'all'},
       {label: 'Coding', id: 'code'},
@@ -123,12 +29,12 @@ appControllers.controller('ProjectsListController', ['$scope', '$http',
   }
 ]);
 
-appControllers.controller('ProjectDetailController', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
+appControllers.controller('ProjectDetailController', ['$scope', '$routeParams', 'Project',
+  function($scope, $routeParams, Project) {
     var slug = $routeParams.projectName;
     var result = projects.filter(function(elt) {
       return elt.slug === slug;
     })
-    $scope.project = result[0];
+    $scope.project = Project.get({projectName: $routeParams.projectName}, function(phone) {});
   }
 ]);

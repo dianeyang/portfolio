@@ -1,20 +1,26 @@
-<div id="email-form" class="top-text">
+<div id="email" class="top-text">
 	<div class="container clearfix">
-	contact
-	name
-	email
-	subject
-	message
+		<div class="column col-left">
+			Get in touch
 
-	<form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
-	Name:<br>
-	<input type="text" name="name" value="your name"><br>
-	E-mail:<br>
-	<input type="text" name="mail" value="your email"><br>
-	Comment:<br>
-	<input type="text" name="comment" value="your comment" size="50"><br><br>
-	<input type="submit" value="Send">
-	<input type="reset" value="Reset">
-	</form>
+			<form novalidate name="emailForm" action="MAILTO:dianeyang@college.harvard.edu" method="post" enctype="text/plain">
+				<input type="text" name="name" placeholder="Name" ng-model="email.senderName" ng-model-options="{ updateOn: 'blur' }" required>
+				<span ng-show="emailForm.name.$dirty &&emailForm.name.$error.required">I'd love to know your name.</span>
+
+				<input type="email" name="emailAddress" placeholder="Email" ng-model="email.senderEmail" ng-model-options="{ updateOn: 'blur' }" required>
+				<span ng-show="emailForm.emailAddress.$dirty && emailForm.emailAddress.$invalid">
+			      I'll need a valid email to respond.
+			    </span>
+
+				<input type="text" name="subject" placeholder="Subject" ng-model="email.subject" ng-model-options="{ updateOn: 'blur' }" required>
+				<span ng-show="emailForm.subject.$dirty && emailForm.subject.$error.required">What did you want to talk about?</span>
+
+				<textarea name="message" rows="5" placeholder="Message" ng-model="email.message" ng-model-options="{ updateOn: 'blur' }" required></textarea>
+				<span ng-show="emailForm.message.$dirty && emailForm.message.$error.required">What did you want to talk about?</span>
+
+				<input type="submit" value="Send">
+			</form>
+		</div>
+		<div class="column col-right"></div>
 	</div>
 </div>

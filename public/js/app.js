@@ -24,7 +24,7 @@ App.config(['$routeProvider', '$locationProvider',
       .when('/contact', {
         templateUrl: 'partials/contact.html'
       })
-      .when('/projects/:projectName', {
+      .when('/work/:projectName', {
         templateUrl: 'partials/details.html',
         controller: 'ProjectDetailController'
       })
