@@ -26,39 +26,11 @@
 </div>
 
 <div id="projects" class="clearfix">
-	<ul class="inline-list" fade-in-sequence isotope-filtering data-filters="#filters ul li a">
-		<li class="project code">
-			<div class="inner"></div>
-		</li>
-		<li class="project art">
-			<div class="inner"></div>
-		</li>
-		<li class="project design">
-			<div class="inner"></div>
-		</li>
-		<li class="project code">
-			<div class="inner"></div>
-		</li>
-		<li class="project art">
-			<div class="inner"></div>
-		</li>
-		<li class="project art">
-			<div class="inner"></div>
-		</li>
-		<li class="project code ">
-			<div class="inner"></div>
-		</li>
-		<li class="project art">
-			<div class="inner"></div>
-		</li>
-		<li class="project design">
-			<div class="inner"></div>
-		</li>
-		<li class="project code">
-			<div class="inner"></div>
-		</li>
-		<li class="project design">
-			<div class="inner"></div>
+	<ul class="inline-list" isotope-filtering data-filters="#filters ul li a">
+		<li ng-repeat="proj in projects" index="{{$index}}" class="project {{proj.type}}" staggered-fade-in>
+			<div class="inner">
+				<a href="#/projects/{{proj.slug}}"></a>
+			</div>
 		</li>
 	</ul>
 </div>

@@ -134,6 +134,10 @@ ul.small-spaced-links
 		padding-bottom: 25%
 		position: relative
 
+		div a
+			display: block
+			height: 100%
+
 		&:nth-child(5n)
 			background-color: #FDF1CC
 
@@ -162,6 +166,9 @@ ul.small-spaced-links
 	height: 100%
 	position: absolute
 
+.ng-enter, .ng-move
+	display: none !important
+
 @media screen and (min-width: 320px) and (max-width: $break1)		
 	.container
 		padding: 0 30px
@@ -170,11 +177,17 @@ ul.small-spaced-links
 		padding-top: 30px
 
 	#mini-bio
-		padding: 40px 0 60px 0
+		padding: 40px 0 10px 0
 
 	#long-bio
 		.col-left, .col-right
 			width: 100%
+
+	#filters
+		ul li
+			margin-bottom: 0
+			padding: 18px 30px 26px 0
+			font-size: 12px
 
 @media screen and (min-width: $break1+1) and (max-width: $break2)
 	.container
