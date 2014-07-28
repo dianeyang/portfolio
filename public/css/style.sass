@@ -181,8 +181,8 @@ ul.small-spaced-links
 	position: absolute
 
 #social-icons
-	font-size: 20px
-	padding-bottom: 10px
+	font-size: 24px
+	padding-bottom: 30px
 
 	span
 		padding: 0 11px
@@ -190,13 +190,33 @@ ul.small-spaced-links
 		&:first-of-type
 			padding-left: 0
 
+		a
+			transition: color .1s linear
+
 	#quora
 		font-family: 'Socialico'
-		font-size: 28px
+		font-size: 32px
 		margin-top: 3px
 		position: relative
 		top: 3px
 
+		&:hover
+			color: #a20
+
+	#twitter:hover
+		color: #1dcaff
+
+	#instagram:hover
+		color: #517fa4
+
+	#tumblr:hover
+		color: #32506d
+
+	#pinterest:hover
+		color: #cb2027
+
+	#github:hover
+		color: #4183c4
 
 form[name='emailForm']
 	input, textarea
@@ -251,10 +271,6 @@ form[name='emailForm']
 	.top-text
 		padding: 40px 0 10px 0
 
-	.col-left, .col-right
-		width: 100%
-		padding: 0
-
 	#header
 		padding-top: 30px
 
@@ -273,6 +289,7 @@ form[name='emailForm']
 
 @media screen and (max-width: $break2)
 	.col-left, .col-right
+		padding: 0
 		width: 100%
 
 	.col-right
@@ -282,5 +299,12 @@ form[name='emailForm']
 	#header
 		#navigation
 			display: none
+
+	#social-icons
+		span
+			font-size: 24px
+
+		#quora
+			font-size: 32px
 
 /* not desktop */

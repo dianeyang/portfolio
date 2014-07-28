@@ -153,18 +153,32 @@ ul.small-spaced-links.right li {
   position: absolute; }
 
 #social-icons {
-  font-size: 20px;
-  padding-bottom: 10px; }
+  font-size: 24px;
+  padding-bottom: 30px; }
   #social-icons span {
     padding: 0 11px; }
     #social-icons span:first-of-type {
       padding-left: 0; }
+    #social-icons span a {
+      transition: color 0.1s linear; }
   #social-icons #quora {
     font-family: "Socialico";
-    font-size: 28px;
+    font-size: 32px;
     margin-top: 3px;
     position: relative;
     top: 3px; }
+    #social-icons #quora:hover {
+      color: #aa2200; }
+  #social-icons #twitter:hover {
+    color: #1dcaff; }
+  #social-icons #instagram:hover {
+    color: #517fa4; }
+  #social-icons #tumblr:hover {
+    color: #32506d; }
+  #social-icons #pinterest:hover {
+    color: #cb2027; }
+  #social-icons #github:hover {
+    color: #4183c4; }
 
 form[name='emailForm'] input, form[name='emailForm'] textarea {
   width: 100%;
@@ -210,10 +224,6 @@ form[name='emailForm'] .error-message {
   .top-text {
     padding: 40px 0 10px 0; }
 
-  .col-left, .col-right {
-    width: 100%;
-    padding: 0; }
-
   #header {
     padding-top: 30px; }
 
@@ -229,11 +239,17 @@ form[name='emailForm'] .error-message {
     padding: 0 40px; } }
 @media screen and (max-width: 1024px) {
   .col-left, .col-right {
+    padding: 0;
     width: 100%; }
 
   .col-right .inner {
     padding-bottom: 66.67%; }
 
   #header #navigation {
-    display: none; } }
+    display: none; }
+
+  #social-icons span {
+    font-size: 24px; }
+  #social-icons #quora {
+    font-size: 32px; } }
 /* not desktop */
