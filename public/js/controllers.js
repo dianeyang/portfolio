@@ -46,13 +46,9 @@ appControllers.controller('EmailFormController', ['$scope',
       $scope.submitted = true;
     };
     $scope.hasError = function(field){
-      var selector = 'input[name=' + field + ']';
-      var invalid = ($scope.emailForm[field].$dirty && $scope.emailForm[field].$invalid)
+      return ($scope.emailForm[field].$dirty && $scope.emailForm[field].$invalid)
         || ($scope.submitted && $scope.emailForm[field].$invalid);
 
-      var blurred = !$(selector).is(':focus');
-
-      return invalid
     };
   }
 ])
