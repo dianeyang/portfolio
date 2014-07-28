@@ -41,7 +41,7 @@
 				<input type="text" name="name" placeholder="Name" ng-class="{submitted: submitted}" ng-model="email.senderName" required>
 				<div class="error-message" ng-show="hasError('name')">I'd love to know your name.</div>
 
-				<input type="email" name="email" placeholder="Email" ng-class="{submitted: submitted}" ng-model="email.senderEmail"required>
+				<input type="text" name="email" placeholder="Email" ng-class="{submitted: submitted}" ng-model="email.senderEmail" ng-pattern=/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i required>
 				<div class="error-message" ng-show="hasError('email')"> 
 			      Valid email required. You'd like a response, right?
 			    </div>
