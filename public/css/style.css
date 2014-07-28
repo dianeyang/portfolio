@@ -257,7 +257,7 @@ form[name='emailForm'] .error-message {
     padding: 0 40px; } }
 @media screen and (max-width: 1024px) {
   .col-left, .col-right {
-    padding: 0;
+    padding: 0 !important;
     width: 100%; }
 
   .col-right .inner {
