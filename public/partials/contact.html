@@ -38,18 +38,18 @@
 
 			<form novalidate name="emailForm" action="MAILTO:dianeyang@college.harvard.edu" method="post" enctype="text/plain" ng-submit="submitForm()">
 
-				<input type="text" name="name" placeholder="Name" ng-model="email.senderName" required>
-				<div class="error-message" ng-show="hasError('name') || submitted">I'd love to know your name.</div>
+				<input type="text" name="name" placeholder="Name" ng-class="{submitted: submitted}" ng-model="email.senderName" required>
+				<div class="error-message" ng-show="hasError('name')">I'd love to know your name.</div>
 
-				<input type="email" name="email" placeholder="Email" ng-model="email.senderEmail"required>
+				<input type="email" name="email" placeholder="Email" ng-class="{submitted: submitted}" ng-model="email.senderEmail"required>
 				<div class="error-message" ng-show="hasError('email')"> 
 			      Valid email required. You'd like a response, right?
 			    </div>
 
-				<input type="text" name="subject" placeholder="Subject" ng-model="email.subject" required>
+				<input type="text" name="subject" placeholder="Subject" ng-class="{submitted: submitted}" ng-model="email.subject" required>
 				<div class="error-message" ng-show="hasError('subject')">Please help me out with a subject line.</div>
 
-				<textarea name="message" rows="7" placeholder="Message" ng-model="email.message" required></textarea>
+				<textarea name="message" rows="7" placeholder="Message" ng-class="{submitted: submitted}" ng-model="email.message" required></textarea>
 				<div class="error-message" ng-show="hasError('message')">What did you want to talk about?</div>
 
 				<input type="submit" value="Send">

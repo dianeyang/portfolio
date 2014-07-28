@@ -209,7 +209,7 @@ form[name='emailForm'] input[type=submit] {
 form[name='emailForm'] input[type=text]:focus, form[name='emailForm'] input[type=email]:focus, form[name='emailForm'] textarea:focus {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
   color: #444444; }
-form[name='emailForm'] input.ng-invalid.ng-dirty:not(:focus), form[name='emailForm'] textarea.ng-invalid.ng-dirty:not(:focus) {
+form[name='emailForm'] input.ng-invalid:not(:focus).ng-dirty, form[name='emailForm'] input.ng-invalid:not(:focus).submitted, form[name='emailForm'] textarea.ng-invalid:not(:focus).ng-dirty, form[name='emailForm'] textarea.ng-invalid:not(:focus).submitted {
   box-shadow: inset 0 0 6px #fa787e; }
 form[name='emailForm'] .error-message {
   font-size: 15px; }
