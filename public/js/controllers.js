@@ -42,9 +42,28 @@ appControllers.controller('ProjectDetailController', ['$scope', '$routeParams', 
 appControllers.controller('EmailFormController', ['$scope',
   function ($scope) {
     $scope.submitted = false;
+
     $scope.submitForm = function() {
       $scope.submitted = true;
+      $.ajax({  
+          type: "POST",  
+          url: "api/contact.php",  
+          data: {
+            name: $("input[name=name]").val(),
+            email: $("input[name=email]").val(),
+            subject: $("input[name=subject]").val(),
+            message: $("textarea[name=message]").val()
+          },  
+          success: function() {  
+              console.log('yayyyyy');
+          },
+          error: function() {
+              console.log('hmmmm');               
+          }
+      });  
+
     };
+
     $scope.hasError = function(field){
       return ($scope.emailForm[field].$dirty && $scope.emailForm[field].$invalid)
         || ($scope.submitted && $scope.emailForm[field].$invalid);

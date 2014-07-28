@@ -36,7 +36,7 @@
 				</span>
 			</div>
 
-			<form novalidate name="emailForm" action="MAILTO:dianeyang@college.harvard.edu" method="post" enctype="text/plain" ng-submit="submitForm()">
+			<form novalidate name="emailForm" method="" autocomplete="off" action="" enctype="text/plain" ng-submit="submitForm()">
 
 				<input type="text" name="name" placeholder="Name" ng-class="{submitted: submitted}" ng-model="email.senderName" required>
 				<div class="error-message" ng-show="hasError('name')">I'd love to know your name.</div>

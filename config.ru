@@ -1,7 +1,7 @@
 # require 'rack/rewrite'
 
 use Rack::Static,
-  :urls => ["/images", "/js", "/css", "/fonts", "/partials", "/projects"],
+  :urls => ["/images", "/js", "/css", "/fonts", "/partials", "/projects", "/api"],
   :root => "public"
 
 # use Rack::Rewrite do
