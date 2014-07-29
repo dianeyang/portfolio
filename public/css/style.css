@@ -27,7 +27,9 @@ h1 {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: inherit; }
+
+#mini-bio a, #long-bio a, #contact-description a {
   border-bottom: 1px dotted #b4b4b4; }
 
 p {
@@ -59,8 +61,6 @@ ul.small-spaced-links li {
   font-size: 13px;
   letter-spacing: 1px;
   color: darkgrey; }
-ul.small-spaced-links a {
-  border: none; }
 ul.small-spaced-links a:hover {
   color: #818181; }
 ul.small-spaced-links.left li {
@@ -83,8 +83,6 @@ ul.small-spaced-links.right li {
     #header #title h1 {
       letter-spacing: 2px;
       margin-top: 16px; }
-      #header #title h1 a {
-        border: none; }
   #header #navigation {
     float: right; }
 
@@ -181,8 +179,7 @@ ul.small-spaced-links.right li {
     #social-icons span:first-of-type {
       padding-left: 0; }
     #social-icons span a {
-      transition: color 0.1s linear;
-      border: none; }
+      transition: color 0.1s linear; }
   #social-icons #quora {
     font-family: "Socialico";
     font-size: 32px;
@@ -210,7 +207,8 @@ form[name='emailForm'] input, form[name='emailForm'] textarea {
   margin-top: 12px;
   padding: 8px;
   background-color: #dddddd;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  border-radius: 0; }
 form[name='emailForm'] input[type=submit] {
   background-color: #aaaaaa;
   width: 120px;
