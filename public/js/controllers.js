@@ -12,11 +12,18 @@ appControllers.controller('ProjectsListController', ['$scope', 'Project',
       {label: 'Art', id: 'art'}
     ];
 
+    $scope.isotopeInit = false;
+
     $scope.doFilter = function($event) {
       $('#filters a').removeClass('selected');
       $($event.delegateTarget).find('a').addClass('selected');
 
       var filter = $($event.delegateTarget).attr('id');
+
+      if (!$scope.isotopeInit) {
+        $('#projects ul').isotope();
+        $scope.isotopeInit = true;
+      }
 
       if(filter === 'all') {
         filter = '*';
