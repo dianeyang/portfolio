@@ -54,7 +54,7 @@ appControllers.controller('EmailFormController', ['$scope',
       $scope.submitted = true;
       $.ajax({  
           type: "POST",  
-          url: "api/contact.php",  
+          url: "contact.php",  
           data: {
             name: $("input[name=name]").val(),
             email: $("input[name=email]").val(),
