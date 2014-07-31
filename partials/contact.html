@@ -1,0 +1,60 @@
+<div id="email" class="top-text">
+	<div class="container clearfix">
+		<div class="column col-left">
+			<p id="contact-description">
+				You can reach me at <a href="mailto:dianeyang@college.harvard.edu">dianeyang@college.harvard.edu</a>, or use the form below. Find me elsewhere on the web here:
+			</p>
+			<div id="social-icons">
+				<span>
+					<a id="quora" href="http://quora.com/Diane-Yang">Q</a>
+				</span>
+
+				<span>
+					<a id="twitter" href="https://www.twitter.com/diane_xy">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</span>
+				<span>
+					<a id="instagram" href="http://www.instagram.com/dianexyang">
+						<i class="fa fa-instagram"></i>
+					</a>
+				</span>
+				<span>
+					<a id="tumblr" href="http://dianeyang.tumblr.com">
+						<i class="fa fa-tumblr"></i>
+					</a>
+				</span>
+				<span>
+					<a id="pinterest" href="http://www.pinterest.com/dianexyang">
+						<i class="fa fa-pinterest"></i>
+					</a>
+				</span>
+				<span>
+					<a id="github" href="http://www.github.com/dianeyang">
+						<i class="fa fa-github-alt"></i>
+					</a>
+				</span>
+			</div>
+
+			<form novalidate name="emailForm" method="" autocomplete="off" action="" enctype="text/plain" ng-submit="submitForm()">
+
+				<input type="text" name="name" placeholder="Name" ng-class="{submitted: submitted}" ng-model="email.senderName" required>
+				<div class="error-message" ng-show="hasError('name')">I'd love to know your name.</div>
+
+				<input type="text" name="email" placeholder="Email" ng-class="{submitted: submitted}" ng-model="email.senderEmail" ng-pattern=/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i required>
+				<div class="error-message" ng-show="hasError('email')"> 
+			      Valid email required. You'd like a response, right?
+			    </div>
+
+				<input type="text" name="subject" placeholder="Subject" ng-class="{submitted: submitted}" ng-model="email.subject" required>
+				<div class="error-message" ng-show="hasError('subject')">Please help me out with a subject line.</div>
+
+				<textarea name="message" rows="7" placeholder="Message" ng-class="{submitted: submitted}" ng-model="email.message" required></textarea>
+				<div class="error-message" ng-show="hasError('message')">What did you want to talk about?</div>
+
+				<input type="submit" value="Send">
+			</form>
+		</div>
+		<div class="column col-right"></div>
+	</div>
+</div>
