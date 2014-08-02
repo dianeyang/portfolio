@@ -27,7 +27,7 @@
 	        <script src="js/directives.js"></script>
 	        <script src="js/services.js"></script>
 
-	        <base href="/" />
+	        <base href="#/" />
 
     </head>
 
@@ -47,16 +47,16 @@
 				</div>
 				<ul class="inline-list small-spaced-links right">
 					<li id="work">
-						<a href="/">Work</a>
+						<a href="#/">Work</a>
 					</li>
 					<li id="resume">
-						<a href="/resume">Resume</a>
+						<a href="#/resume">Resume</a>
 					</li>
 					<li id="about">
-						<a href="/about">About</a>
+						<a href="#/about">About</a>
 					</li>
 					<li id="contact">
-						<a href="/contact">Contact</a>
+						<a href="#/contact">Contact</a>
 					</li>
 				</ul>
 			</div>
