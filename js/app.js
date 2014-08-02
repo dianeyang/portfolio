@@ -33,9 +33,9 @@ App.config(['$routeProvider', '$locationProvider',
         redirectTo: '/'
       })
 
-      // if(window.history && window.history.pushState){
-      //   $locationProvider.html5Mode(true);
-      // }
+      if(window.history && window.history.pushState){
+        $locationProvider.html5Mode(true);
+      }
   }]);
 
 

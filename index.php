@@ -8,6 +8,8 @@
 
 	        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+	        <base href="//dianeyang.herokuapp.com" />
+
 	        <link rel="stylesheet" href="css/reset.css" type="text/css" />
 	        <link rel="stylesheet" href="css/style.css" type="text/css" />
 
@@ -18,6 +20,7 @@
 	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	        <script src="js/angular.js"></script>
 	        <script src="js/angular-route.js"></script>
+	        <script src="js/angular-ui-router.min.js"></script>
 	        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-animate.min.js"></script>
 	        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-resource.min.js"></script>
 	        <script src="js/isotope.pkgd.min.js"></script>
@@ -26,8 +29,6 @@
 	        <script src="js/controllers.js"></script>
 	        <script src="js/directives.js"></script>
 	        <script src="js/services.js"></script>
-
-	        <base href="#/" />
 
     </head>
 
@@ -47,16 +48,16 @@
 				</div>
 				<ul class="inline-list small-spaced-links right">
 					<li id="work">
-						<a href="#/">Work</a>
+						<a href="/">Work</a>
 					</li>
 					<li id="resume">
-						<a href="#/resume">Resume</a>
+						<a href="/resume">Resume</a>
 					</li>
 					<li id="about">
-						<a href="#/about">About</a>
+						<a href="/about">About</a>
 					</li>
 					<li id="contact">
-						<a href="#/contact">Contact</a>
+						<a href="/contact">Contact</a>
 					</li>
 				</ul>
 			</div>
