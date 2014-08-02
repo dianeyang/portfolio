@@ -39,10 +39,7 @@ appControllers.controller('ProjectsListController', ['$scope', 'Project',
 appControllers.controller('ProjectDetailController', ['$scope', '$routeParams', 'Project',
   function($scope, $routeParams, Project) {
     var slug = $routeParams.projectName;
-    var result = projects.filter(function(elt) {
-      return elt.slug === slug;
-    })
-    $scope.project = Project.get({projectName: $routeParams.projectName}, function(phone) {});
+    $scope.project = Project.get({projectName: $routeParams.projectName}, function(project) {});
   }
 ]);
 

@@ -13,7 +13,6 @@ appDirectives.directive('isotopeContainer', ['Isotope', function(Isotope){
   return {
     link: function(scope, elem, attrs) {
       scope.inited = false;
-      console.log('LALALALA');
     },
     controller: function($scope) {
       this.isoInitOrRedraw = function(elem){
