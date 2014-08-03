@@ -304,7 +304,9 @@ form[name='emailForm'] .error-message {
     #header #navigation #bars {
       display: block;
       float: right;
-      font-size: 30px; }
+      font-size: 30px;
+      transition: margin-top 0.25s ease-in-out;
+      -webkit-transition: margin-top 0.25s ease-in-out; }
       #header #navigation #bars.scrolled {
         margin-top: 20px; }
     #header #navigation .inline-list {
