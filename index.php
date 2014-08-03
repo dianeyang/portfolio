@@ -8,7 +8,7 @@
 
 	        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	        <base href="//dianeyang.herokuapp.com/" />
+	        <base href="//localhost:8000/" />
 
 	        <link rel="stylesheet" href="css/reset.css" type="text/css" />
 	        <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -34,7 +34,7 @@
 
 <body ng-app="portfolio">
 
-	<div id="header" class="clearfix all-caps">
+	<div id="header" class="clearfix all-caps" ng-controller="MainController">
 		<div class="container">
 			<div id="title">
 				<h1>
@@ -64,7 +64,7 @@
 		</div>
 	</div>
 
-	<div ng-view fade-from-top class="main-view"></div>
+	<div ng-view fade-from-top class="main-view" autoscroll="true"></div>
 
 	<div id="footer">
 	</div>

@@ -2,6 +2,12 @@
 
 var appControllers = angular.module('appControllers', []);
 
+appControllers.controller('MainController', ['$scope',
+  function($scope) {
+  }
+]);
+
+
 appControllers.controller('ProjectsListController', ['$scope', 'Project',
   function($scope, Project) {
     $scope.projects = Project.query()

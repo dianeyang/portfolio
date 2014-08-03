@@ -89,7 +89,7 @@ ul.small-spaced-links {
     display: none;
     color: #444444; }
     #header #bars i {
-      padding: 5px 7px 3px 7px;
+      padding: 4px 5px 2px 5px;
       background-color: #f4f4f4; }
   #header #navigation {
     float: right;
@@ -261,7 +261,7 @@ form[name='emailForm'] .error-message {
   #header {
     padding-top: 24px; }
     #header #navigation #bars {
-      margin-top: 42px;
+      margin-top: 41px;
       margin-right: 30px; }
 
   #filters ul li {
