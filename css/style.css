@@ -313,7 +313,8 @@ form[name='emailForm'] .error-message {
     #header #navigation .inline-list {
       background-color: #444444;
       overflow: hidden;
-      max-height: 0; }
+      max-height: 0;
+      display: none; }
       #header #navigation .inline-list li {
         float: none;
         text-align: center;
@@ -330,6 +331,7 @@ form[name='emailForm'] .error-message {
       position: fixed;
       margin-top: 0; }
       #header #navigation.expanded .inline-list {
+        display: block;
         max-height: 300px; }
 
   #resume .col-left, #resume .col-right {
