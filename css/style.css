@@ -28,6 +28,8 @@ h1 {
 a {
   text-decoration: none;
   color: inherit; }
+  a:hover {
+    color: #444444; }
 
 #mini-bio a, #long-bio a, #contact-description a {
   border-bottom: 1px dotted #b4b4b4; }
@@ -54,18 +56,19 @@ ul.inline-list li {
   display: inline;
   float: left; }
 
-ul.small-spaced-links li {
-  text-align: left;
-  padding: 24px 40px 24px 40px;
-  font-size: 13px;
-  letter-spacing: 1px;
+ul.small-spaced-links {
   color: darkgrey; }
-ul.small-spaced-links a:hover {
-  color: #818181; }
-ul.small-spaced-links.left li {
-  padding-left: 0; }
-ul.small-spaced-links.right li {
-  padding-right: 0; }
+  ul.small-spaced-links li {
+    text-align: left;
+    padding: 24px 40px 24px 40px;
+    font-size: 13px;
+    letter-spacing: 1px; }
+  ul.small-spaced-links a:hover {
+    color: #818181; }
+  ul.small-spaced-links.left li {
+    padding-left: 0; }
+  ul.small-spaced-links.right li {
+    padding-right: 0; }
 
 .all-caps {
   text-transform: uppercase;
@@ -83,15 +86,14 @@ ul.small-spaced-links.right li {
       letter-spacing: 2px;
       margin-top: 16px; }
   #header #bars {
-    float: right;
-    font-size: 30px;
-    padding-left: 16px;
-    margin-top: 16px;
-    display: none; }
+    display: none;
+    color: #444444; }
+    #header #bars i {
+      padding: 5px 7px 3px 7px;
+      background-color: #f4f4f4; }
   #header #navigation {
     float: right;
-    margin-top: 4px;
-    background-color: #f4f4f4; }
+    margin-top: 4px; }
 
 .top-text {
   padding: 80px 0 96px 0; }
@@ -258,6 +260,9 @@ form[name='emailForm'] .error-message {
 
   #header {
     padding-top: 24px; }
+    #header #navigation #bars {
+      margin-top: 42px;
+      margin-right: 30px; }
 
   #filters ul li {
     margin-bottom: 0;
@@ -274,7 +279,11 @@ form[name='emailForm'] .error-message {
     padding: 0 40px; }
 
   #long-bio {
-    padding-bottom: 50px; } }
+    padding-bottom: 50px; }
+
+  #navigation #bars {
+    margin-top: 77px;
+    margin-right: 40px; } }
 @media screen and (max-width: 1024px) {
   .col-left, .col-right {
     padding-right: 0 !important;
@@ -283,15 +292,38 @@ form[name='emailForm'] .error-message {
   .col-right {
     padding-bottom: 66.67%; }
 
-  #header #bars {
-    display: block; }
-  #header #navigation .inline-list {
-    position: absolute;
-    float: right; }
-    #header #navigation .inline-list li {
-      float: none;
+  #header #navigation {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    margin: 0; }
+    #header #navigation #bars {
       display: block;
-      text-align: right; }
+      float: right;
+      font-size: 30px;
+      transition: margin-top 0.25s linear;
+      -webkit-transition: margin-top 0.25s linear; }
+    #header #navigation .inline-list {
+      background-color: #444444;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.3s linear;
+      -webkit-transition: max-height 0.3s linear; }
+      #header #navigation .inline-list li {
+        float: none;
+        text-align: center;
+        padding: 0; }
+        #header #navigation .inline-list li a {
+          padding: 20px 0;
+          display: block; }
+          #header #navigation .inline-list li a:hover {
+            color: #f4f4f4; }
+    #header #navigation.expanded #bars {
+      margin-top: 14px; }
+    #header #navigation.expanded .inline-list {
+      max-height: 300px; }
 
   #social-icons span {
     font-size: 24px; }

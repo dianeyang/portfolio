@@ -37,6 +37,9 @@ a
 	text-decoration: none
 	color: inherit
 
+	&:hover
+		color: $darkGrey
+
 #mini-bio, #long-bio, #contact-description
 	a
 		border-bottom: 1px dotted #B4B4B4
@@ -67,12 +70,12 @@ ul.inline-list
 		float: left
 
 ul.small-spaced-links
+	color: $smallCapsColor
 	li
 		text-align: left
 		padding: 24px 40px 24px 40px
 		font-size: 13px
 		letter-spacing: 1px
-		color: $smallCapsColor
 
 	a:hover
 		color: $bodyTextColor
@@ -102,16 +105,16 @@ ul.small-spaced-links
 			margin-top: 16px
 
 	#bars
-		float: right
-		font-size: 30px
-		padding-left: 16px
-		margin-top: 16px
 		display: none
+		color: $darkGrey
+
+		i
+			padding: 5px 7px 3px 7px
+			background-color: $backgroundColor
 
 	#navigation
 		float: right
 		margin-top: 4px
-		background-color: $backgroundColor
 
 .top-text
 	padding: 80px 0 96px 0
@@ -318,6 +321,11 @@ form[name='emailForm']
 	#header
 		padding-top: 24px
 
+		#navigation
+			#bars
+				margin-top: 42px
+				margin-right: 30px
+
 	#filters
 		ul li
 			margin-bottom: 0
@@ -337,6 +345,11 @@ form[name='emailForm']
 	#long-bio
 		padding-bottom: 50px
 
+	#navigation
+		#bars
+			margin-top: 77px
+			margin-right: 40px
+
 @media screen and (max-width: $break2)
 	.col-left, .col-right
 		padding-right: 0 !important
@@ -346,18 +359,44 @@ form[name='emailForm']
 		padding-bottom: 66.67%
 
 	#header
-		#bars
-			display: block
+		#navigation	
+			position: fixed
+			left: 0
+			top: 0
+			width: 100%
+			z-index: 999
+			margin: 0
 
-		#navigation			
-			.inline-list
-				position: absolute
+			#bars
+				display: block
 				float: right
+				font-size: 30px
+				transition: margin-top .25s linear
+				-webkit-transition: margin-top .25s linear
+
+			.inline-list
+				background-color: $darkGrey
+				overflow: hidden
+				max-height: 0
+				transition: max-height .3s linear
+				-webkit-transition: max-height .3s linear
 
 				li
 					float: none
-					display: block
-					text-align: right
+					text-align: center
+					padding: 0
+
+					a
+						padding: 20px 0
+						display: block
+
+						&:hover
+							color: $backgroundColor
+			&.expanded
+				#bars
+					margin-top: 14px
+				.inline-list
+					max-height: 300px
 
 	#social-icons
 		span

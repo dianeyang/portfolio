@@ -42,24 +42,24 @@
 				</h1>
 			</div>
 
-			<div id="navigation">
-				<div id="bars">
-					<i class="fa fa-bars"></i>
-				</div>
+			<div id="navigation" ng-class="{expanded: expanded}">
 				<ul class="inline-list small-spaced-links right">
 					<li id="work">
-						<a href="/">Work</a>
+						<a href="/" ng-click="expanded=false">Work</a>
 					</li>
 					<li id="resume">
-						<a href="/resume">Resume</a>
+						<a href="/resume" ng-click="expanded=false">Resume</a>
 					</li>
 					<li id="about">
-						<a href="/about">About</a>
+						<a href="/about" ng-click="expanded=false">About</a>
 					</li>
 					<li id="contact">
-						<a href="/contact">Contact</a>
+						<a href="/contact" ng-click="expanded=false">Contact</a>
 					</li>
 				</ul>
+				<div id="bars" ng-init="expanded=false" ng-click="expanded=!expanded">
+					<i class="fa fa-bars"></i>
+				</div>
 			</div>
 		</div>
 	</div>
