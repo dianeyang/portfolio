@@ -304,9 +304,7 @@ form[name='emailForm'] .error-message {
     #header #navigation #bars {
       display: block;
       float: right;
-      font-size: 30px;
-      transition: margin-top 0.25s ease-in-out;
-      -webkit-transition: margin-top 0.25s ease-in-out; }
+      font-size: 30px; }
       #header #navigation #bars.scrolled {
         margin-top: 20px; }
     #header #navigation .inline-list {
@@ -328,6 +326,9 @@ form[name='emailForm'] .error-message {
       margin-top: 14px; }
     #header #navigation.expanded .inline-list {
       max-height: 300px; }
+
+  #resume .col-left, #resume .col-right {
+    width: 100%; }
 
   #social-icons span {
     font-size: 24px; }
