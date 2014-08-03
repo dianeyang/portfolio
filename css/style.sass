@@ -129,11 +129,13 @@ ul.small-spaced-links
 
 .col-right
 	width: 40%
-	padding-bottom: 27.52%
 	position: relative
 	float: left
 
 #long-bio
+	.image-container
+		width: 100%
+		padding-bottom: 66.67%
 	.inner
 		background: url("../images/profile2.jpg")
 		background-size: cover
@@ -362,9 +364,9 @@ form[name='emailForm']
 @media screen and (max-width: $break2)
 	.col-left, .col-right
 		padding-right: 0 !important
-		width: 100%
+		width: 100% !important
 
-	.col-right
+	.image-container
 		padding-bottom: 66.67%
 
 	#header
@@ -413,9 +415,9 @@ form[name='emailForm']
 					display: block
 					max-height: 300px
 
-	#resume
-		.col-left, .col-right
-			width: 100%
+	#long-bio
+		.col-left
+			padding-bottom: 24px
 
 	#social-icons
 		span
