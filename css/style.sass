@@ -136,6 +136,7 @@ ul.small-spaced-links
 	.image-container
 		width: 100%
 		padding-bottom: 66.67%
+
 	.inner
 		background: url("../images/profile2.jpg")
 		background-size: cover
@@ -224,6 +225,23 @@ ul.small-spaced-links
 
 	.col-right
 		width: 37%
+
+	#pdf-container
+		display: block
+		margin-top: -52px
+		padding-bottom: 15px
+
+		#resume-pdf
+			text-transform: uppercase
+			border: 2px solid #818181
+			font-size: 14px
+			letter-spacing: 0.04em
+			padding: 6px 8px
+			font-family: 'Raleway', sans-serif
+			float: right
+
+			&:hover
+				border-color: #444
 
 #social-icons
 	font-size: 24px
@@ -339,11 +357,27 @@ form[name='emailForm']
 			padding: 18px 30px 26px 0
 			font-size: 12px
 
+	#projects
+		padding-bottom: 0
+
 	#mini-bio
 		font-size: 20px
 
+	#resume
+		#pdf-container
+			display: block
+			margin-top: 0
+			padding-top: 18px
+			padding-bottom: 26px
+
+			#resume-pdf
+				float: left
+
 	#long-bio
 		padding-bottom: 40px
+
+	#footer
+		padding-bottom: 60px
 
 @media screen and (min-width: $break1+1) and (max-width: $break2)
 	.container
@@ -414,6 +448,14 @@ form[name='emailForm']
 				.inline-list
 					display: block
 					max-height: 300px
+
+	#resume
+		#pdf-container
+			display: block
+			margin-top: -46px
+			padding-bottom: 10px
+
+			#resume-pdf
 
 	#long-bio
 		.col-left

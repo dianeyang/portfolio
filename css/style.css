@@ -184,6 +184,20 @@ ul.small-spaced-links {
   width: 63%; }
 #resume .col-right {
   width: 37%; }
+#resume #pdf-container {
+  display: block;
+  margin-top: -52px;
+  padding-bottom: 15px; }
+  #resume #pdf-container #resume-pdf {
+    text-transform: uppercase;
+    border: 2px solid #818181;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    padding: 6px 8px;
+    font-family: "Raleway", sans-serif;
+    float: right; }
+    #resume #pdf-container #resume-pdf:hover {
+      border-color: #444444; }
 
 #social-icons {
   font-size: 24px;
@@ -274,11 +288,25 @@ form[name='emailForm'] .error-message {
     padding: 18px 30px 26px 0;
     font-size: 12px; }
 
+  #projects {
+    padding-bottom: 0; }
+
   #mini-bio {
     font-size: 20px; }
 
+  #resume #pdf-container {
+    display: block;
+    margin-top: 0;
+    padding-top: 18px;
+    padding-bottom: 26px; }
+    #resume #pdf-container #resume-pdf {
+      float: left; }
+
   #long-bio {
-    padding-bottom: 40px; } }
+    padding-bottom: 40px; }
+
+  #footer {
+    padding-bottom: 60px; } }
 @media screen and (min-width: 625px) and (max-width: 1024px) {
   .container {
     padding: 0 40px; }
@@ -335,6 +363,11 @@ form[name='emailForm'] .error-message {
       #header #navigation.expanded .inline-list {
         display: block;
         max-height: 300px; }
+
+  #resume #pdf-container {
+    display: block;
+    margin-top: -46px;
+    padding-bottom: 10px; }
 
   #long-bio .col-left {
     padding-bottom: 24px; }
