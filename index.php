@@ -8,7 +8,7 @@
 
 	        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	        <base href="//dianeyang.herokuapp.com/" />
+	        <base href="//dianeyang.herokuapp.com" />
 
 	        <link rel="stylesheet" href="css/reset.css" type="text/css" />
 	        <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -57,7 +57,7 @@
 						<a href="/contact" ng-click="expanded=false">Contact</a>
 					</li>
 				</ul>
-				<div id="bars" ng-init="expanded=false" ng-click="expanded=!expanded">
+				<div id="bars" ng-init="expanded=false" ng-click="expanded=!expanded" scroll-position="scroll" ng-class="{scrolled: scroll > 57}">
 					<i class="fa fa-bars"></i>
 				</div>
 			</div>
