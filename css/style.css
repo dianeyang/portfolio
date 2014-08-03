@@ -95,11 +95,12 @@ ul.small-spaced-links {
     float: right;
     margin-top: 4px; }
 
-.top-text {
-  padding: 80px 0 96px 0; }
+#header {
+  padding-bottom: 80px; }
 
 #mini-bio {
-  font-size: 23px; }
+  font-size: 23px;
+  padding-bottom: 96px; }
 
 .col-left {
   width: 60%;
@@ -131,34 +132,32 @@ ul.small-spaced-links {
     border-bottom: 3px solid #818181;
     color: #818181; }
 
-#projects {
-  padding-bottom: 100px; }
-  #projects li.project {
-    width: 33.333%;
-    height: 0;
-    padding-bottom: 25%;
-    position: relative; }
-    #projects li.project div a {
-      display: block;
-      height: 100%; }
-    #projects li.project:nth-child(5n) {
-      background-color: #fdf1cc; }
-    #projects li.project:nth-child(5n+1) {
-      background-color: #c6d6b8; }
-    #projects li.project:nth-child(5n+2) {
-      background-color: #987f69; }
-    #projects li.project:nth-child(5n+3) {
-      background-color: #e3ad40; }
-    #projects li.project:nth-child(5n+4) {
-      background-color: #fcd036; }
-    @media screen and (max-width: 624px) {
-      #projects li.project {
-        width: 100%;
-        padding-bottom: 75%; } }
-    @media screen and (min-width: 625px) and (max-width: 1024px) {
-      #projects li.project {
-        width: 50%;
-        padding-bottom: 37.5%; } }
+#projects li.project {
+  width: 33.333%;
+  height: 0;
+  padding-bottom: 25%;
+  position: relative; }
+  #projects li.project div a {
+    display: block;
+    height: 100%; }
+  #projects li.project:nth-child(5n) {
+    background-color: #fdf1cc; }
+  #projects li.project:nth-child(5n+1) {
+    background-color: #c6d6b8; }
+  #projects li.project:nth-child(5n+2) {
+    background-color: #987f69; }
+  #projects li.project:nth-child(5n+3) {
+    background-color: #e3ad40; }
+  #projects li.project:nth-child(5n+4) {
+    background-color: #fcd036; }
+  @media screen and (max-width: 624px) {
+    #projects li.project {
+      width: 100%;
+      padding-bottom: 75%; } }
+  @media screen and (min-width: 625px) and (max-width: 1024px) {
+    #projects li.project {
+      width: 50%;
+      padding-bottom: 37.5%; } }
 
 #resume h2, #resume h3, #resume h4, #resume h5, #resume h6 {
   line-height: 1.4em; }
@@ -264,6 +263,9 @@ form[name='emailForm'] input.ng-invalid:not(:focus).ng-dirty, form[name='emailFo
 form[name='emailForm'] .error-message {
   font-size: 15px; }
 
+#footer {
+  padding-bottom: 60px; }
+
 @media screen and (max-width: 624px) {
   body {
     font-size: 17px; }
@@ -271,8 +273,8 @@ form[name='emailForm'] .error-message {
   .container {
     padding: 0 20px; }
 
-  .top-text {
-    padding: 40px 0 10px 0; }
+  #header {
+    padding-bottom: 40px; }
 
   #header {
     padding-top: 24px; }
@@ -292,7 +294,8 @@ form[name='emailForm'] .error-message {
     padding-bottom: 0; }
 
   #mini-bio {
-    font-size: 20px; }
+    font-size: 20px;
+    padding-bottom: 10px; }
 
   #resume #pdf-container {
     display: block;
@@ -302,10 +305,7 @@ form[name='emailForm'] .error-message {
       float: left; }
 
   #long-bio {
-    padding-bottom: 40px; }
-
-  #footer {
-    padding-bottom: 60px; } }
+    padding-bottom: 40px; } }
 @media screen and (min-width: 625px) and (max-width: 1024px) {
   .container {
     padding: 0 40px; }
