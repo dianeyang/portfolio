@@ -42,7 +42,7 @@
 				</h1>
 			</div>
 
-			<div id="navigation" ng-class="{expanded: expanded}">
+			<div id="navigation" ng-class="{expanded: expanded, scrolled: scroll > 55}"  scroll-position="scroll">
 				<ul class="inline-list small-spaced-links right">
 					<li id="work">
 						<a href="/" ng-click="expanded=false">Work</a>
@@ -57,7 +57,7 @@
 						<a href="/contact" ng-click="expanded=false">Contact</a>
 					</li>
 				</ul>
-				<div id="bars" ng-init="expanded=false" ng-click="expanded=!expanded" scroll-position="scroll" ng-class="{scrolled: scroll > 57}">
+				<div id="bars" ng-init="expanded=false" ng-click="expanded=!expanded">
 					<i class="fa fa-bars"></i>
 				</div>
 			</div>

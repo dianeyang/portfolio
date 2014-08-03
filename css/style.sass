@@ -322,9 +322,14 @@ form[name='emailForm']
 		padding-top: 24px
 
 		#navigation
-			#bars
-				margin-top: 41px
-				margin-right: 20px
+			&.scrolled
+				top: 14px
+				right: 20px
+
+			&.expanded
+				#bars
+					margin-right: 20px
+					margin-top: 14px
 
 	#filters
 		ul li
@@ -346,9 +351,13 @@ form[name='emailForm']
 		padding-bottom: 50px
 
 	#navigation
-		#bars
-			margin-top: 77px
-			margin-right: 30px
+		&.scrolled
+			top: 19px
+			right: 40px
+		&.expanded
+			#bars
+				margin-right: 40px
+				margin-top: 14px
 
 @media screen and (max-width: $break2)
 	.col-left, .col-right
@@ -363,29 +372,23 @@ form[name='emailForm']
 			z-index: 999
 
 		#navigation	
-			position: fixed
-			left: 0
-			top: 0
-			width: 100%
 			z-index: 998
-			margin: 0
+			margin-top: 16px
+
+			&.scrolled
+				position: fixed
+				margin-top: 0
+
 
 			#bars
 				display: block
 				float: right
 				font-size: 30px
-				transition: margin-top .25s ease-in-out
-				-webkit-transition: margin-top .25s ease-in-out
-
-				&.scrolled
-					margin-top: 20px
 
 			.inline-list
 				background-color: $darkGrey
 				overflow: hidden
 				max-height: 0
-				transition: max-height .3s linear
-				-webkit-transition: max-height .3s linear
 
 				li
 					float: none
@@ -399,8 +402,12 @@ form[name='emailForm']
 						&:hover
 							color: $backgroundColor
 			&.expanded
-				#bars
-					margin-top: 14px
+				top: 0
+				left: 0
+				width: 100%
+				position: fixed
+				margin-top: 0
+
 				.inline-list
 					max-height: 300px
 

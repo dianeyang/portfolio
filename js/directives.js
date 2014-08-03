@@ -65,13 +65,13 @@ appDirectives.directive('fadeFromTop', function() {
   }
 });
 
-appDirectives.directive('scrollPosition', function() {
+appDirectives.directive('scrollPosition', ['$window', function($window) {
   return {
     scope: {
       scroll: '=scrollPosition'
     },
     link: function(scope, element, attrs) {
-      var windowEl = angular.element(window);
+      var windowEl = angular.element($window);
       var handler = function() {
         scope.scroll = windowEl.scrollTop();
       }
@@ -79,4 +79,4 @@ appDirectives.directive('scrollPosition', function() {
       handler();
     }
   };
-})
+}])
