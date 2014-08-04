@@ -46,6 +46,9 @@ appControllers.controller('ProjectDetailController', ['$scope', '$routeParams', 
   function($scope, $routeParams, Project) {
     var slug = $routeParams.projectName;
     $scope.project = Project.get({projectName: $routeParams.projectName}, function(project) {});
+    $scope.render = function(e) {
+      return $(e).html();
+    }
   }
 ]);
 

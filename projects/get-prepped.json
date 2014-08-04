@@ -1,6 +1,6 @@
 {
 	"name": "Get Prepped",
-	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida nec odio vel tempor. Ut aliquet purus nec facilisis consequat. Nunc lacinia placerat neque in laoreet. Pellentesque rutrum hendrerit quam, ac volutpat massa imperdiet eu. Etiam purus velit, congue sed enim non, cursus ultricies ante. Proin mattis massa quis porta gravida. Integer pulvinar, lacus auctor mollis pellentesque, quam massa sagittis justo, ut semper tortor tortor non eros. Donec consequat in magna vel convallis. Ut at orci ac libero imperdiet venenatis a quis arcu. Pellentesque rhoncus sodales pellentesque. Morbi in gravida erat, a commodo mi. Vivamus bibendum, orci in cursus bibendum, leo ante luctus tellus, sit amet eleifend risus arcu a libero. Pellentesque porttitor velit a luctus molestie. Pellentesque sed interdum turpis, ac vehicula leo. Curabitur iaculis fermentum condimentum.",
+	"description": "<a href='#'>Lorem ipsum dolor sit amet</a>, consectetur adipiscing elit. Quisque gravida nec odio vel tempor. Ut aliquet purus nec facilisis consequat. Nunc lacinia placerat neque in laoreet. Pellentesque rutrum hendrerit quam, ac volutpat massa imperdiet eu. Etiam purus velit, congue sed enim non, cursus ultricies ante. Proin mattis massa quis porta gravida. Integer pulvinar, lacus auctor mollis pellentesque, quam massa sagittis justo, ut semper tortor tortor non eros. Donec consequat in magna vel convallis. Ut at orci ac libero imperdiet venenatis a quis arcu. Pellentesque rhoncus sodales pellentesque. Morbi in gravida erat, a commodo mi. Vivamus bibendum, orci in cursus bibendum, leo ante luctus tellus, sit amet eleifend risus arcu a libero. Pellentesque porttitor velit a luctus molestie. Pellentesque sed interdum turpis, ac vehicula leo. Curabitur iaculis fermentum condimentum.",
 	"photos": [
 		{
 			"url": "images/get-prepped2.jpg",
@@ -12,6 +12,10 @@
 		},
 		{
 			"url": "images/get-prepped3.jpg",
+			"ratio": "55.56%"
+		},
+		{
+			"url": "images/get-prepped4.jpg",
 			"ratio": "55.56%"
 		}
 	],

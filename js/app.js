@@ -3,6 +3,7 @@
 var App = angular.module('portfolio', [
   'ngRoute',
   'ngAnimate',
+  'ngSanitize',
   'appControllers',
   'appDirectives',
   'appServices'

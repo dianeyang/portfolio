@@ -8,7 +8,7 @@
 
 	        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	        <base href="//dianeyang.herokuapp.com/" />
+	        <base href="//localhost:8000/" />
 
 	        <link rel="stylesheet" href="css/reset.css" type="text/css" />
 	        <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -23,6 +23,7 @@
 	        <script src="js/angular-ui-router.min.js"></script>
 	        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-animate.min.js"></script>
 	        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-resource.min.js"></script>
+	        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-sanitize.min.js"></script>
 	        <script src="js/isotope.pkgd.min.js"></script>
 	        <script src="js/app.js"></script>
 	        <script src="js/animations.js"></script>
