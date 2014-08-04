@@ -1,0 +1,11 @@
+{
+    "name": "Harvard I/O 2014",
+    "description": "Harvard I/O is an annual event where students invite professors, entrepreneurs, and students to share their big ideas. I was asked to design promotional materials for the event, including the flyer at right.",
+    "photos": [
+    	{
+    		"url": "images/harvard_io1.png",
+    		"ratio": "127.3%"
+    	}
+    ],
+    "technologies": ["Adobe Illustrator"]
+}

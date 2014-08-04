@@ -1,0 +1,13 @@
+{
+    "name": "Textify",
+    "description": "LALALA",
+    "photos": [
+    	{
+    		"url": "images/textify1.png",
+    		"ratio": "74.94%"
+    	}
+    ],
+    "technologies": ["Python"],
+    "link": "https://www.youtube.com/watch?v=TEC7MndYi0U&list=UUxo2F2z0HNH0eTJ4PU9qWhg",
+    "linkText": "View demo video"
+}

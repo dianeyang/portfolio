@@ -1,0 +1,24 @@
+{
+    "name": "Modesta and Saizi Go To The Doctor",
+    "description": "This is a children's book my roommate and I made for Harvard College Stories for Orphans. She wrote the story, and I drew the illustrations. HCSO pairs writers and illustrators to create a story tailored for kids in orphanages. We were assigned Modesta and Saizi, a boy and a girl living in Malawi. The entire process took a few months from conception to completion. Then, the books were printed and shipped to the orphanage.",
+    "photos": [
+    	{
+    		"url": "images/ms1.jpg",
+    		"ratio": "125%",
+    		"id": "ms"
+    	},
+    	{
+    		"url": "images/ms3.jpg",
+    		"ratio": "125%",
+    		"id": "ms"
+    	},
+        {
+            "url": "images/ms2.jpg",
+            "ratio": "125%",
+            "id": "ms"
+        }
+    ],
+    "technologies": ["Pen & Paper", "Adobe Photoshop"],
+    "link": "https://www.dropbox.com/s/4359in7y5xuo9na/dianeyang_carolpowell_layout.pdf",
+    "linkText": "Read the book"
+}

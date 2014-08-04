@@ -1,0 +1,8 @@
+{
+    "name": "Harvard Food Finder",
+    "description": "lalala",
+    "photos": [],
+    "technologies": ["Python", "SQL", "PHP", "JavaScript", "HTML/CSS"],
+    "link": "http://www.harvardfoodfinder.com",
+    "linkText": "View live"
+}

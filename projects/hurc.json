@@ -1,0 +1,15 @@
+{
+    "name": "Harvard University Robotics Club",
+    "description": "LALALA",
+    "photos": [
+    	{
+    		"url": "images/hurc1.png",
+    		"ratio": "25.8%"
+    	},
+    	{
+    		"url": "images/hurc2.png",
+    		"ratio": "108.4%"
+    	}
+    ],
+    "technologies": ["Adobe Illustrator"]
+}
