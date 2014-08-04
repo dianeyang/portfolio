@@ -16,7 +16,7 @@
 	        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Raleway:400,900' rel='stylesheet' type='text/css'>
 	        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-xs
+
 	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	        <script src="js/angular.js"></script>
 	        <script src="js/angular-route.js"></script>
