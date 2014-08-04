@@ -1,90 +1,57 @@
 [
   {
-    "name": "project 1",
-    "slug": "project1",
-    "type": "code",
-    "description": "LALALA",
-    "photos": [],
-    "technologies": ["a", "b", "c"]
+    "name": "Get Prepped",
+    "slug": "get-prepped",
+    "type": "code"
   },
   {
-    "name": "project 2",
-    "slug": "project2",
-    "type": "art",
-    "description": "LALALA",
-    "photos": [],
-    "technologies": ["a","b","c"]
+    "name": "Modesta and Saizi Go To The Doctor",
+    "slug": "modesta-and-saizi",
+    "type": "art"
   },
   {
-    "name": "project 3",
-    "slug": "project3",
-    "type": "design",
-    "description": "LALALA",
-    "photos": [],
-    "technologies": ["a","b","c"]
+    "name": "Harvard I/O 2014",
+    "slug": "harvard-io-2014",
+    "type": "design"
   },
   {
-    "name": "project 4",
-    "slug": "project4",
-    "type": "code",
-    "description": "LALALA",
-    "photos": [],
-    "technologies": ["a","b","c"]
+    "name": "Textify",
+    "slug": "textify",
+    "type": "code"
   },
   {
-    "name": "project 5",
-    "slug": "project5",
-    "type": "art",
-    "description": "LALALA",
-    "photos": [],
-    "technologies": ["a","b","c"]
+    "name": "Personified Programming Languages",
+    "slug": "personified-programming-languages",
+    "type": "art"
   },
   {
-    "name": "project 6",
-    "slug": "project6",
-    "type": "art",
-    "description": "LALALA",
-    "photos": [],
-    "technologies": ["a","b","c"]
+    "name": "The Harvard Crimson",
+    "slug": "harvard-crimson",
+    "type": "art"
   },
   {
-    "name": "project 7",
-    "slug": "project7",
-    "type": "code",
-    "description": "LALALA",
-    "photos": [],
-    "technologies": ["a","b","c"]
+    "name": "Hocus",
+    "slug": "hocus",
+    "type": "code"
   },
   {
-    "name": "project 8",
-    "slug": "project8",
-    "type": "art",
-    "description": "LALALA",
-    "photos": [],
-    "technologies": ["a","b","c"]
+    "name": "Traditional Art",
+    "slug": "traditional-art",
+    "type": "art"
   },
   {
-    "name": "project 9",
-    "slug": "project9",
-    "type": "design",
-    "description": "LALALA",
-    "photos": [],
-    "technologies": ["a","b","c"]
+    "name": "Crosswalk by Bowery",
+    "slug": "crosswalk",
+    "type": "design"
   },
   {
-    "name": "project 10",
-    "slug": "project10",
-    "type": "code",
-    "description": "LALALA",
-    "photos": [],
-    "technologies": ["a","b","c"]
+    "name": "Harvard Food Finder",
+    "slug": "harvard-food-finder",
+    "type": "code"
   },
   {
-    "name": "project 11",
-    "slug": "project11",
-    "type": "design",
-    "description": "LALALA",
-    "photos": [],
-    "technologies": ["a","b","c"]
+    "name": "Harvard University Robotics Club",
+    "slug": "hurc",
+    "type": "design"
   }
 ]

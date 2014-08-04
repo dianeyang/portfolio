@@ -13,7 +13,7 @@
 	        <link rel="stylesheet" href="css/reset.css" type="text/css" />
 	        <link rel="stylesheet" href="css/style.css" type="text/css" />
 
-	        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900|Raleway:400,900' rel='stylesheet' type='text/css'>
+	        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Raleway:400,900' rel='stylesheet' type='text/css'>
 	        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 

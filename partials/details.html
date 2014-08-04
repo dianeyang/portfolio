@@ -1,6 +1,28 @@
-<div id="details">
-	<div class="container">
-		<p>{{project.name}}</p>
-		<p>{{project.description}}</p>
+<div class="details">
+	<div class="container clearfix">
+		<div class="column col-left" scroll-position="scroll" ng-class="{fixed: scroll > 148}">
+			<h2>{{project.name}}</h2>
+
+			<p class="view-live" ng-if="project.link">
+				<a href={{project.link}}>
+					{{project.linkText}}  &#10141;
+				</a>
+			</p>
+
+			<p class="techs">
+				<span ng-repeat="tech in project.technologies" class="tech">
+					{{tech}}
+				</span>
+			</p>
+
+			<p>{{project.description}}</p>
+		</div>
+
+		<div class="column col-right">
+			<div ng-repeat="photo in project.photos" class="project-photo" style="padding-bottom: {{photo.ratio}}">
+				<div class="inner" style="background-image: url('{{photo.url}}')">
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
