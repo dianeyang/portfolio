@@ -58,8 +58,6 @@ appControllers.controller('EmailFormController', ['$scope',
 
     $scope.submitForm = function() {
       $scope.submitted = true;
-      $scope.success = false;
-      $scope.failed = false;
       $('input[type=submit]').attr('value', 'Sending...')
       $.ajax({  
           type: "POST",  
@@ -71,14 +69,9 @@ appControllers.controller('EmailFormController', ['$scope',
             message: $("textarea[name=message]").val()
           },  
           success: function() {
-              $scope.success = true;
-              $scope.failed = false;
               $('input[type=submit]').attr('value', 'Sent!')
           },
           error: function() {
-              $scope.success = false;
-              $scope.failed = true;
-              console.log('hmmmm');   
               $('input[type=submit]').attr('value', 'Failed :(')            
           }
       });  
