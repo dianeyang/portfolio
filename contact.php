@@ -20,10 +20,10 @@ $sendgrid = new SendGrid($sendgrid_username, $sendgrid_password);
 
 $toSend = new SendGrid\Email();
 $toSend->addTo($email_to)->
-          setFrom($email_from)->
-          setSubject($subject)->
-          setText($message)->
-          setHtml($message);
+		addHeader('From', $name)->
+        setFrom($email_from)->
+        setSubject($subject)->
+        setText($message);
 $response = $sendgrid->send($toSend);
 
 ?>
