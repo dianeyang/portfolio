@@ -52,7 +52,9 @@
 				<textarea name="message" rows="7" placeholder="Message" ng-class="{submitted: submitted}" ng-model="email.message" required></textarea>
 				<div class="error-message" ng-show="hasError('message')">What did you want to talk about?</div>
 
-				<input type="submit" value="Send">
+				<input type="submit" value="Send" ng-class="{success: success}">
+				<span class="error-message" ng-show="success">Thanks! I'll get back to you soon!</span>
+				<span class="error-message" ng-show="failed">Something went wrong. Try again?</span>
 			</form>
 		</div>
 	</div>

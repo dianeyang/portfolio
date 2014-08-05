@@ -323,6 +323,8 @@ form[name='emailForm'] input[type=submit] {
   outline: 0; }
   form[name='emailForm'] input[type=submit]:active {
     box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3); }
+  form[name='emailForm'] input[type=submit].success {
+    background-color: #a2e299; }
 form[name='emailForm'] input[type=text]:focus, form[name='emailForm'] input[type=email]:focus, form[name='emailForm'] textarea:focus {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
   color: #444444; }
