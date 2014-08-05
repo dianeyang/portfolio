@@ -18,11 +18,12 @@ $message .= "\r\nSent by " . $name . " (" . $email_from . ") via contact form.";
 // send it away!
 $sendgrid = new SendGrid($sendgrid_username, $sendgrid_password);
 
-$message = new SendGrid\Email();
-$message->addTo($email_to)->
+$toSend = new SendGrid\Email();
+$toSend->addTo($email_to)->
           setFrom($email_from)->
           setSubject($subject)->
-          setText($message);
-$response = $sendgrid->send($message);
+          setText($message)->
+          setHtml($message);
+$response = $sendgrid->send($toSend);
 
 ?>
