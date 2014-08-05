@@ -4,7 +4,7 @@
     "slug": "get-prepped",
     "type": "code",
     "image": "images/get-prepped2.jpg",
-    "shortDescription": "Windows App"
+    "shortDescription": "Windows app"
   },
   {
     "name": "Modesta and Saizi Go To The Doctor",
@@ -67,7 +67,7 @@
     "slug": "harvard-food-finder",
     "type": "code",
     "image": "images/get-prepped2.jpg",
-    "shortDescription": "Bayesian filter"
+    "shortDescription": "Bayesian classifier & web app"
   },
   {
     "name": "Harvard University Robotics Club",
