@@ -122,7 +122,7 @@ ul.small-spaced-links {
     letter-spacing: 0.04em;
     margin-bottom: 20px; }
 .details .techs {
-  padding-bottom: 36px; }
+  padding-bottom: 32px; }
 .details .tech {
   background-color: #cccccc;
   padding: 4px 4px 3px 6px;
@@ -130,7 +130,8 @@ ul.small-spaced-links {
   font-family: "Raleway", sans-serif;
   font-size: 12px;
   margin-right: 6px;
-  border-radius: 2px; }
+  border-radius: 2px;
+  line-height: 2.3; }
 .details .project-photo {
   width: 100%;
   height: 0;
@@ -165,10 +166,40 @@ ul.small-spaced-links {
   width: 33.333%;
   height: 0;
   padding-bottom: 25%;
-  position: relative; }
-  #projects li.project div a {
-    display: block;
-    height: 100%; }
+  position: relative;
+  background-size: cover; }
+  #projects li.project .inner a, #projects li.project .inner .mask, #projects li.project .inner .project-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  #projects li.project .inner .mask {
+    background-color: #f4f4f4;
+    opacity: 0.25;
+    transition: opacity 0.2s ease-in-out; }
+  #projects li.project .inner a {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 80;
+    height: auto; }
+  #projects li.project .inner .project-name {
+    color: #f4f4f4;
+    font-weight: 300;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.04em;
+    width: 50%;
+    max-height: 2em;
+    margin: auto; }
+  #projects li.project:hover .mask {
+    opacity: 0.85;
+    background-color: #444444; }
+  #projects li.project:hover .project-name {
+    opacity: 1; }
   #projects li.project:nth-child(5n) {
     background-color: #fdf1cc; }
   #projects li.project:nth-child(5n+1) {

@@ -1,6 +1,19 @@
 {
     "name": "Personified Programming Languages",
     "description": "LALALA",
-    "photos": [],
+    "photos": [
+    	{
+    		"url": "images/personified2.png",
+    		"ratio": "125.7%"
+    	},
+    	{
+    		"url": "images/personified3.png",
+    		"ratio": "150%"
+    	},
+    	{
+    		"url": "images/personified1.png",
+    		"ratio": "136.36%"
+    	}
+    ],
     "technologies": ["Adobe Photoshop"]
 }

@@ -2,56 +2,67 @@
   {
     "name": "Get Prepped",
     "slug": "get-prepped",
-    "type": "code"
+    "type": "code",
+    "image": "images/get-prepped2.jpg"
   },
   {
     "name": "Modesta and Saizi Go To The Doctor",
     "slug": "modesta-and-saizi",
-    "type": "art"
+    "type": "art",
+    "image": "images/ms1.jpg"
   },
   {
     "name": "Harvard I/O 2014",
     "slug": "harvard-io-2014",
-    "type": "design"
+    "type": "design",
+    "image": "images/harvard_io1.png"
   },
   {
     "name": "Textify",
     "slug": "textify",
-    "type": "code"
+    "type": "code",
+    "image": "images/textify1.png"
   },
   {
     "name": "Personified Programming Languages",
     "slug": "personified-programming-languages",
-    "type": "art"
+    "type": "art",
+    "image": "images/personified2.png"
   },
   {
     "name": "The Harvard Crimson",
     "slug": "harvard-crimson",
-    "type": "art"
+    "type": "art",
+    "image": "images/get-prepped2.jpg"
   },
   {
     "name": "Hocus",
     "slug": "hocus",
-    "type": "code"
+    "type": "code",
+    "image": "images/hocus1.jpeg"
   },
   {
     "name": "Traditional Art",
     "slug": "traditional-art",
-    "type": "art"
+    "type": "art",
+    "image": "images/get-prepped2.jpg"
   },
   {
     "name": "Crosswalk by Bowery",
     "slug": "crosswalk",
-    "type": "design"
+    "type": "design",
+    "image": "images/crosswalk1.png"
   },
   {
     "name": "Harvard Food Finder",
     "slug": "harvard-food-finder",
-    "type": "code"
+    "type": "code",
+    "image": "images/get-prepped2.jpg"
   },
   {
     "name": "Harvard University Robotics Club",
     "slug": "hurc",
-    "type": "design"
+    "type": "design",
+    "image": "images/hurc2.png"
   }
 ]

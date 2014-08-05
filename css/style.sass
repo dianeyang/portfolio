@@ -156,7 +156,7 @@ ul.small-spaced-links
 			// font-family: 'Raleway', sans-serif
 
 	.techs
-		padding-bottom: 36px
+		padding-bottom: 32px
 
 	.tech
 		background-color: #CCC
@@ -166,6 +166,7 @@ ul.small-spaced-links
 		font-size: 12px
 		margin-right: 6px
 		border-radius: 2px
+		line-height: 2.3
 
 	.project-photo
 		width: 100%
@@ -211,10 +212,47 @@ ul.small-spaced-links
 		height: 0
 		padding-bottom: 25%
 		position: relative
+		background-size: cover
 
-		div a
-			display: block
-			height: 100%
+		.inner
+			a, .mask, .project-name
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+
+			.mask
+				background-color: $backgroundColor
+				opacity: 0.25
+				transition: opacity .2s ease-in-out
+
+			a
+				text-align: center
+				vertical-align: middle
+				padding: 0 80
+				height: auto
+
+			.project-name
+				color: $backgroundColor
+				font-weight: 300
+				font-size: 16px
+				opacity: 0
+				transition: opacity .2s ease-in-out
+				text-transform: uppercase
+				font-family: 'Raleway', sans-serif
+				letter-spacing: 0.04em
+				width: 50%
+				max-height: 2em
+				margin: auto
+
+		&:hover
+			.mask
+				opacity: 0.85
+				background-color: $darkGrey
+
+			.project-name
+				opacity: 1
 
 		&:nth-child(5n)
 			background-color: #FDF1CC
