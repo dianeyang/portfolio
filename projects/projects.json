@@ -3,66 +3,77 @@
     "name": "Get Prepped",
     "slug": "get-prepped",
     "type": "code",
-    "image": "images/get-prepped2.jpg"
+    "image": "images/get-prepped2.jpg",
+    "shortDescription": "Windows App"
   },
   {
     "name": "Modesta and Saizi Go To The Doctor",
     "slug": "modesta-and-saizi",
     "type": "art",
-    "image": "images/ms1.jpg"
+    "image": "images/ms1.jpg",
+    "shortDescription": "Children's book"
   },
   {
     "name": "Harvard I/O 2014",
     "slug": "harvard-io-2014",
     "type": "design",
-    "image": "images/harvard_io1.png"
+    "image": "images/harvard_io1.png",
+    "shortDescription": "Graphic design"
   },
   {
     "name": "Textify",
     "slug": "textify",
     "type": "code",
-    "image": "images/textify1.png"
+    "image": "images/textify1.png",
+    "shortDescription": "Optical character recognition"
   },
   {
     "name": "Personified Programming Languages",
     "slug": "personified-programming-languages",
     "type": "art",
-    "image": "images/personified2.png"
+    "image": "images/personified2.png",
+    "shortDescription": "Drawing series"
   },
   {
     "name": "The Harvard Crimson",
     "slug": "harvard-crimson",
     "type": "art",
-    "image": "images/get-prepped2.jpg"
+    "image": "images/get-prepped2.jpg",
+    "shortDescription": "Illustrations"
   },
   {
     "name": "Hocus",
     "slug": "hocus",
     "type": "code",
-    "image": "images/hocus1.jpeg"
+    "image": "images/hocus1.jpeg",
+    "shortDescription": "Android app"
   },
   {
     "name": "Traditional Art",
     "slug": "traditional-art",
     "type": "art",
-    "image": "images/get-prepped2.jpg"
+    "image": "images/get-prepped2.jpg",
+    "shortDescription": "Paintings & Drawings"
   },
   {
     "name": "Crosswalk by Bowery",
     "slug": "crosswalk",
     "type": "design",
-    "image": "images/crosswalk1.png"
+    "image": "images/crosswalk1.png",
+    "shortDescription": "Graphic design"
   },
   {
     "name": "Harvard Food Finder",
     "slug": "harvard-food-finder",
     "type": "code",
-    "image": "images/get-prepped2.jpg"
+    "image": "images/get-prepped2.jpg",
+    "shortDescription": "Bayesian filter"
   },
   {
     "name": "Harvard University Robotics Club",
     "slug": "hurc",
     "type": "design",
-    "image": "images/hurc2.png"
+    "image": "images/hurc2.png",
+    "shortDescription": "Logo design"
   }
 ]

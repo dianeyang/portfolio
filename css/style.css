@@ -168,7 +168,7 @@ ul.small-spaced-links {
   padding-bottom: 25%;
   position: relative;
   background-size: cover; }
-  #projects li.project .inner a, #projects li.project .inner .mask, #projects li.project .inner .project-name {
+  #projects li.project .inner a, #projects li.project .inner .mask, #projects li.project .inner .info-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -183,22 +183,29 @@ ul.small-spaced-links {
     vertical-align: middle;
     padding: 0 80;
     height: auto; }
+  #projects li.project .inner .info-container {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.04em;
+    width: 50%;
+    max-height: 5em;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out; }
   #projects li.project .inner .project-name {
     color: #f4f4f4;
     font-weight: 300;
     font-size: 16px;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-    text-transform: uppercase;
-    font-family: "Raleway", sans-serif;
-    letter-spacing: 0.04em;
-    width: 50%;
-    max-height: 2em;
-    margin: auto; }
+    text-transform: uppercase; }
+  #projects li.project .inner .divider {
+    width: 50px;
+    border-bottom: 1px solid #818181;
+    margin: 8px auto; }
+  #projects li.project .inner .short-description {
+    color: #999999; }
   #projects li.project:hover .mask {
-    opacity: 0.85;
+    opacity: 0.9;
     background-color: #444444; }
-  #projects li.project:hover .project-name {
+  #projects li.project:hover .info-container {
     opacity: 1; }
   #projects li.project:nth-child(5n) {
     background-color: #fdf1cc; }

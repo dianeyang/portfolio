@@ -215,7 +215,7 @@ ul.small-spaced-links
 		background-size: cover
 
 		.inner
-			a, .mask, .project-name
+			a, .mask, .info-container
 				position: absolute
 				top: 0
 				left: 0
@@ -233,25 +233,35 @@ ul.small-spaced-links
 				padding: 0 80
 				height: auto
 
+			.info-container
+				font-family: 'Raleway', sans-serif
+				letter-spacing: 0.04em
+				width: 50%
+				max-height: 5em
+				margin: auto
+				opacity: 0
+				transition: opacity .2s ease-in-out
+
 			.project-name
 				color: $backgroundColor
 				font-weight: 300
 				font-size: 16px
-				opacity: 0
-				transition: opacity .2s ease-in-out
 				text-transform: uppercase
-				font-family: 'Raleway', sans-serif
-				letter-spacing: 0.04em
-				width: 50%
-				max-height: 2em
-				margin: auto
+
+			.divider
+				width: 50px
+				border-bottom: 1px solid $bodyTextColor
+				margin: 8px auto
+
+			.short-description
+				color: #999
 
 		&:hover
 			.mask
-				opacity: 0.85
+				opacity: 0.9
 				background-color: $darkGrey
 
-			.project-name
+			.info-container
 				opacity: 1
 
 		&:nth-child(5n)
