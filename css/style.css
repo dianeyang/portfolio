@@ -5,12 +5,14 @@
   font-style: normal; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -mox-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
 
 body {
   font-weight: 300;
   color: #818181;
-  background-color: #f4f4f4;
+  background-color: white;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   letter-spacing: 0.02em;
@@ -91,7 +93,7 @@ ul.small-spaced-links {
     color: #444444; }
     #header #bars i {
       padding: 4px 5px 2px 5px;
-      background-color: #f4f4f4; }
+      background-color: white; }
   #header #navigation {
     float: right;
     margin-top: 4px; }
@@ -124,7 +126,7 @@ ul.small-spaced-links {
 .details .techs {
   padding-bottom: 32px; }
 .details .tech {
-  background-color: #cccccc;
+  background-color: gainsboro;
   padding: 4px 4px 3px 6px;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
@@ -175,7 +177,7 @@ ul.small-spaced-links {
     right: 0;
     bottom: 0; }
   #projects li.project .inner .mask {
-    background-color: #f4f4f4;
+    background-color: white;
     opacity: 0.25;
     transition: opacity 0.2s ease-in-out; }
   #projects li.project .inner a {
@@ -192,7 +194,7 @@ ul.small-spaced-links {
     opacity: 0;
     transition: opacity 0.2s ease-in-out; }
   #projects li.project .inner .project-name {
-    color: #f4f4f4;
+    color: white;
     font-weight: 300;
     font-size: 16px;
     text-transform: uppercase; }
@@ -362,6 +364,9 @@ form[name='emailForm'] .error-message {
   #projects {
     padding-bottom: 0; }
 
+  .project-description {
+    margin-bottom: 20px; }
+
   #mini-bio {
     font-size: 20px;
     padding-bottom: 10px; }
@@ -398,6 +403,9 @@ form[name='emailForm'] .error-message {
   #navigation.expanded #bars {
     margin-right: 40px;
     margin-top: 14px; }
+
+  .project-description {
+    margin-bottom: 30px; }
 
   #resume #pdf-container {
     display: block;
@@ -436,7 +444,7 @@ form[name='emailForm'] .error-message {
           padding: 20px 0;
           display: block; }
           #header #navigation .inline-list li a:hover {
-            color: #f4f4f4; }
+            color: white; }
     #header #navigation.expanded {
       top: 0;
       left: 0;
