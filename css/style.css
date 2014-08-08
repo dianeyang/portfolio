@@ -31,9 +31,7 @@ a {
     color: #444444; }
 
 #mini-bio a, #long-bio a, #contact-description a, .project-description a {
-  border-bottom: 1px dotted #b4b4b4; }
-  #mini-bio a:hover, #long-bio a:hover, #contact-description a:hover, .project-description a:hover {
-    border-bottom: 1px dotted #444444; }
+  text-decoration: underline; }
 
 p {
   padding-bottom: 1.5em; }
