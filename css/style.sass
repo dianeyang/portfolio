@@ -40,7 +40,7 @@ a
 	&:hover
 		color: $darkGrey
 
-#mini-bio, #long-bio, #contact-description, .project-description
+#mini-bio, #long-bio, #contact-description, .project-description, #resume-full .column
 	a
 		text-decoration: underline
 
@@ -64,6 +64,19 @@ p
 	height: 100%
 	background-size: cover
 	position: absolute
+
+.techs
+	padding-bottom: 32px
+
+.tech
+	background-color: $techsBackground
+	padding: 4px 4px 3px 6px
+	text-transform: uppercase
+	font-family: 'Raleway', sans-serif
+	font-size: 12px
+	margin-right: 6px
+	border-radius: 2px
+	line-height: 2.3
 
 ul.inline-list
 	li
@@ -154,19 +167,6 @@ ul.small-spaced-links
 			// font-size: 14px
 			// padding: 6px 8px
 			// font-family: 'Raleway', sans-serif
-
-	.techs
-		padding-bottom: 32px
-
-	.tech
-		background-color: $techsBackground
-		padding: 4px 4px 3px 6px
-		text-transform: uppercase
-		font-family: 'Raleway', sans-serif
-		font-size: 12px
-		margin-right: 6px
-		border-radius: 2px
-		line-height: 2.3
 
 	.project-photo
 		width: 100%
@@ -287,31 +287,30 @@ ul.small-spaced-links
 			width: 50%
 			padding-bottom: 37.5%
 
-#resume
+#resume-full
 	h2, h3, h4, h5, h6
 		line-height: 1.4em
 	h2
 		font-size: 24px
 		font-weight: 300
+		margin-bottom: 4px
+		color: turquoise
 
 	h3
+		font-size: 17px
 		font-weight: 400
 
 	h4
 		font-style: italic
-		font-size: 17px
+		font-size: 16px
 
 	h5
 		font-size: 15px
 		text-transform: uppercase
+		color: #BBB
 
-	input[type=submit]
-		width: 100%
-		font-family: inherit
-		font-size: inherit
-		border: 0
-		margin-top: 12px
-		padding: 8px
+	p
+		font-size: 16px
 
 	.col-left
 		padding-right: 80px
@@ -320,6 +319,17 @@ ul.small-spaced-links
 	.col-right
 		width: 37%
 
+	#coursework
+		padding-bottom: 8px
+		background-color: $techsBackground
+		width: 120px
+
+	#course-list
+		font-size: 16px
+		list-style: initial
+		margin: initial
+		padding: 0 0 1em 40px
+
 	#pdf-container
 		display: block
 		margin-top: -52px
@@ -327,7 +337,6 @@ ul.small-spaced-links
 
 		#resume-pdf
 			text-transform: uppercase
-			// border: 2px solid #818181
 			background-color: $techsBackground
 			border-radius: 2px
 			font-size: 14px
@@ -467,7 +476,7 @@ form[name='emailForm']
 		font-size: 20px
 		padding-bottom: 10px
 
-	#resume
+	#resume-full
 		#pdf-container
 			display: block
 			margin-top: -6px
@@ -508,7 +517,7 @@ form[name='emailForm']
 	.project-description
 		margin-bottom: 30px
 
-	#resume
+	#resume-full
 		#pdf-container
 			display: block
 			margin-top: -46px
