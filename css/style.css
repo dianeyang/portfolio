@@ -248,7 +248,7 @@ ul.small-spaced-links {
 #resume-full p {
   font-size: 16px; }
 #resume-full .col-left {
-  padding-right: 80px;
+  padding-right: 50px;
   width: 63%; }
 #resume-full .col-right {
   width: 37%; }
@@ -328,7 +328,7 @@ form[name='emailForm'] input, form[name='emailForm'] textarea {
   -webkit-appearance: none;
   border-radius: 0; }
 form[name='emailForm'] input[type=submit] {
-  background-color: #ababab;
+  background-color: #6cb39e;
   width: 120px;
   font-weight: 300; }
 form[name='emailForm'] textarea {
