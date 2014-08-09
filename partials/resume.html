@@ -12,12 +12,12 @@
 				<h2>Education</h2>
 				<h3>Harvard University</h3>
 				<h4>A.B. in Computer Science, expected May 2016</h4>
-				<p id="coursework" ng-click="showClasses = !showClasses" ng-init="showClasses=false">
+				<div id="coursework" ng-click="showClasses = !showClasses" ng-init="showClasses=false">
 					<span class="show-hide" ng-show="!showClasses">+</span> 
 					<span class="show-hide" ng-show="showClasses">&ndash;</span> 
 					Coursework
-				</p>
-				<ul id="course-list" ng-show="showClasses">
+				</div>
+				<ul id="course-list" ng-show="showClasses" ng-animate="fade">
 					<li>CS 50: Introduction to Computer Science</li>
 					<li>CS 51: Abstraction & Design in Computation</li>
 					<li>CS 121: Theory of Computation</li>

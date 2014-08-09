@@ -254,12 +254,19 @@ ul.small-spaced-links {
   width: 37%; }
 #resume-full #coursework {
   padding-top: 8px;
-  padding-bottom: 14px; }
+  padding-bottom: 14px;
+  font-size: 16px;
+  width: 200px; }
 #resume-full #course-list {
   font-size: 16px;
   list-style: initial;
   margin: initial;
-  padding: 0 0 1em 40px; }
+  padding: 0 0 1em 40px;
+  height: 200px;
+  transition: 0.2s height linear;
+  overflow: hidden; }
+  #resume-full #course-list.ng-hide {
+    height: 0; }
 #resume-full #experience {
   padding-top: 14px; }
   #resume-full #experience h5 {
