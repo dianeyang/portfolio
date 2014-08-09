@@ -6,7 +6,7 @@
 
 * {
   box-sizing: border-box;
-  -mox-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
 
 body {
@@ -232,17 +232,17 @@ ul.small-spaced-links {
   line-height: 1.4em; }
 #resume-full h2 {
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 4px;
-  color: turquoise; }
+  color: #6cb39e; }
 #resume-full h3 {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400; }
 #resume-full h4 {
   font-style: italic;
-  font-size: 16px; }
+  font-size: 14px; }
 #resume-full h5 {
-  font-size: 15px;
+  font-size: 13px;
   text-transform: uppercase;
   color: #bbbbbb; }
 #resume-full p {
@@ -253,14 +253,21 @@ ul.small-spaced-links {
 #resume-full .col-right {
   width: 37%; }
 #resume-full #coursework {
-  padding-bottom: 8px;
-  background-color: gainsboro;
-  width: 120px; }
+  padding-top: 8px;
+  padding-bottom: 14px; }
 #resume-full #course-list {
   font-size: 16px;
   list-style: initial;
   margin: initial;
   padding: 0 0 1em 40px; }
+#resume-full #experience {
+  padding-top: 14px; }
+  #resume-full #experience h5 {
+    padding-bottom: 12px; }
+  #resume-full #experience h5 + p {
+    padding-bottom: 32px; }
+#resume-full #activities h4 {
+  padding-bottom: 12px; }
 #resume-full #pdf-container {
   display: block;
   margin-top: -52px;
@@ -276,6 +283,11 @@ ul.small-spaced-links {
     float: right; }
     #resume-full #pdf-container #resume-pdf:hover {
       border-color: #444444; }
+#resume-full .show-hide {
+  margin-right: 4px;
+  padding: 0 5px 1px 5px;
+  background-color: gainsboro;
+  border-radius: 2px; }
 
 #social-icons {
   font-size: 24px;

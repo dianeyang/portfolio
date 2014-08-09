@@ -12,8 +12,12 @@
 				<h2>Education</h2>
 				<h3>Harvard University</h3>
 				<h4>A.B. in Computer Science, expected May 2016</h4>
-				<p id="coursework">+ Coursework</p>
-				<ul id="course-list">
+				<p id="coursework" ng-click="showClasses = !showClasses" ng-init="showClasses=false">
+					<span class="show-hide" ng-show="!showClasses">+</span> 
+					<span class="show-hide" ng-show="showClasses">&ndash;</span> 
+					Coursework
+				</p>
+				<ul id="course-list" ng-show="showClasses">
 					<li>CS 50: Introduction to Computer Science</li>
 					<li>CS 51: Abstraction & Design in Computation</li>
 					<li>CS 121: Theory of Computation</li>
@@ -45,7 +49,7 @@
 				<h3>Staff Developer</h3>
 				<h4>HSA Rover</h4>
 				<h5>Fall 2012 - Spring 2014</h5>
-				<p>Build websites and apps in teams of two to three. Projects include <a href="work/get-prepped">Get Prepped</a>, a Windows Surface app to help students prepare for the SAT.</p>				
+				<p>Build websites and apps for clients in teams of two or three. Projects include <a href="work/get-prepped">Get Prepped</a>, a Windows Surface app to help students prepare for the SAT.</p>				
 			</div>
 		</div>
 		<div class="column col-right">
@@ -58,7 +62,7 @@
 				<h3>Tools & Frameworks</h3>
 				<p>Angular.js, Backbone.js, MongoDB, Django, jQuery, Android SDK, Heroku, Git</p>
 
-				<h3>Design/Templating</h3>
+				<h3>Design & Templating</h3>
 				<p>HTML, CSS/Sass, Jade, Handlebars.js, Photoshop, Illustrator</p>
 
 			</div>

@@ -15,7 +15,7 @@ $techsBackground: #DCDCDC
 
 *
 	box-sizing: border-box
-	-mox-box-sizing: border-box
+	-moz-box-sizing: border-box
 	-webkit-box-sizing: border-box
 
 body
@@ -292,20 +292,20 @@ ul.small-spaced-links
 		line-height: 1.4em
 	h2
 		font-size: 24px
-		font-weight: 300
+		font-weight: 400
 		margin-bottom: 4px
-		color: turquoise
+		color: #6CB39E
 
 	h3
-		font-size: 17px
+		font-size: 16px
 		font-weight: 400
 
 	h4
 		font-style: italic
-		font-size: 16px
+		font-size: 14px
 
 	h5
-		font-size: 15px
+		font-size: 13px
 		text-transform: uppercase
 		color: #BBB
 
@@ -320,15 +320,27 @@ ul.small-spaced-links
 		width: 37%
 
 	#coursework
-		padding-bottom: 8px
-		background-color: $techsBackground
-		width: 120px
+		padding-top: 8px
+		padding-bottom: 14px
 
 	#course-list
 		font-size: 16px
 		list-style: initial
 		margin: initial
 		padding: 0 0 1em 40px
+
+	#experience
+		padding-top: 14px
+
+		h5
+			padding-bottom: 12px
+
+		h5 + p
+			padding-bottom: 32px
+
+	#activities
+		h4
+			padding-bottom: 12px
 
 	#pdf-container
 		display: block
@@ -347,6 +359,12 @@ ul.small-spaced-links
 
 			&:hover
 				border-color: #444
+
+	.show-hide
+		margin-right: 4px
+		padding: 0 5px 1px 5px
+		background-color: $techsBackground
+		border-radius: 2px
 
 #social-icons
 	font-size: 24px
