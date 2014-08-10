@@ -1,6 +1,6 @@
 {
     "name": "Textify",
-    "description": "<p>Worked in team of 4 to implement a feedforward neural network for optical character recognition of typed text as a final project for CS 51.</p><p>The network took in 20x20 pixel images of letters and was trained to identify lowercase letters, uppercase letters, and periods. Thus, it had 400 input nodes and 53 output nodes, plus a hidden layer of 60 nodes.</p>",
+    "description": "<p>Worked in team of 4 to implement a feedforward neural network for optical character recognition of typed text as a final project for CS 51. The network took in 20x20 pixel images of letters and was trained to identify lowercase letters, uppercase letters, and periods..</p>",
     "photos": [
     	{
     		"url": "images/textify1.png",
