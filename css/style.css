@@ -267,11 +267,11 @@ ul.small-spaced-links {
   list-style: initial;
   margin: initial;
   padding-left: 40px;
-  height: auto;
-  transition: 0.2s height linear;
+  max-height: 260px;
+  transition: 0.2s max-height linear;
   overflow: hidden; }
   #resume-full #course-list.ng-hide {
-    height: 0; }
+    max-height: 0; }
 #resume-full #experience {
   padding-top: 14px; }
   #resume-full #experience h5 {

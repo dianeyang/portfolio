@@ -1,6 +1,6 @@
 3.2.9 (Media Mark)
-7c86a348cba1d8db8a2bf769dda186b9bdf0c28f
-o:Sass::Tree::RootNode	:@template"®%$break1: 624px
+f30c087da3c3e676ff4e12471a8d090375140aac
+o:Sass::Tree::RootNode	:@template"»%$break1: 624px
 $break2: 1024px
 
 $darkGrey: #444
@@ -340,12 +340,12 @@ ul.small-spaced-links
 		list-style: initial
 		margin: initial
 		padding-left: 40px
-		height: auto
-		transition: .2s height linear
+		max-height: 260px
+		transition: .2s max-height linear
 		overflow: hidden
 
 		&.ng-hide
-			height: 0
+			max-height: 0
 
 	#experience
 		padding-top: 14px
@@ -843,7 +843,8 @@ width;[ ;o;;i*;@;[ ;iH;["%;"37%;@;@;iH; ;!;@;@;)[".
 ;/0;@;0o;1;2{ ;iG;,[o;@;	["col-right;@;iG;'To;(;i ;[	o;;i ;	["padding-top;[ ;o;;i;@;[ ;iK;["px;"8px;@;@;iK; ;!o;;i ;	["padding-bottom;[ ;o;;i;@;[ ;iL;["px;"	14px;@;@;iL; ;!o;;i ;	["font-size;[ ;o;;i;@;[ ;iM;["px;"	16px;@;@;iM; ;!o;;i ;	["
 width;[ ;o;;iÈ;@;[ ;iN;["px;"
 200px;@;@;iN; ;!;@;@;)["#coursework;iJ;*o;+;@;iJ;,[o;-;,[o;.
-;/0;@;0o;1;2{ ;iJ;,[o;?;	["coursework;@;iJ;'To;(;i ;[o;;i ;	["font-size;[ ;o;;i;@;[ ;iQ;["px;"	16px;@;@;iQ; ;!o;;i ;	["list-style;[ ;o;	;;&;"initial;@;iR;@;@;iR; ;!o;;i ;	["margin;[ ;o;	;;&;"initial;@;iS;@;@;iS; ;!o;;i ;	["padding-left;[ ;o;;i-;@;[ ;iT;["px;"	40px;@;@;iT; ;!o;;i ;	["height;[ ;o;	;;&;"	auto;@;iU;@;@;iU; ;!o;;i ;	["transition;[ ;o;7	;8;A;[o;;f0.20000000000000001 ™š;@;[ ;iV;["s;"	0.2so;	;;&;"height;@;iVo;	;;&;"linear;@;iV;@;iV;@;@;iV; ;!o;;i ;	["overflow;[ ;o;	;;&;"hidden;@;iW;@;@;iW; ;!o;(;i ;[o;;i ;	["height;[ ;o;;i ;@;@~;iZ;[ ;"0;@;@;iZ; ;!;@;@;)["&.ng-hide;iY;*o;+;@;iY;,[o;-;,[o;.
+;/0;@;0o;1;2{ ;iJ;,[o;?;	["coursework;@;iJ;'To;(;i ;[o;;i ;	["font-size;[ ;o;;i;@;[ ;iQ;["px;"	16px;@;@;iQ; ;!o;;i ;	["list-style;[ ;o;	;;&;"initial;@;iR;@;@;iR; ;!o;;i ;	["margin;[ ;o;	;;&;"initial;@;iS;@;@;iS; ;!o;;i ;	["padding-left;[ ;o;;i-;@;[ ;iT;["px;"	40px;@;@;iT; ;!o;;i ;	["max-height;[ ;o;;i;@;[ ;iU;["px;"
+260px;@;@;iU; ;!o;;i ;	["transition;[ ;o;7	;8;A;[o;;f0.20000000000000001 ™š;@;[ ;iV;["s;"	0.2so;	;;&;"max-height;@;iVo;	;;&;"linear;@;iV;@;iV;@;@;iV; ;!o;;i ;	["overflow;[ ;o;	;;&;"hidden;@;iW;@;@;iW; ;!o;(;i ;[o;;i ;	["max-height;[ ;o;;i ;@;@~;iZ;[ ;"0;@;@;iZ; ;!;@;@;)["&.ng-hide;iY;*o;+;@;iY;,[o;-;,[o;.
 ;/0;@;0o;1;2{ ;iY;,[o;;;@;iYo;@;	["ng-hide;@;iY;'T;@;@;)["#course-list;iP;*o;+;@;iP;,[o;-;,[o;.
 ;/0;@;0o;1;2{ ;iP;,[o;?;	["course-list;@;iP;'To;(;i ;[o;;i ;	["padding-top;[ ;o;;i;@;[ ;i];["px;"	14px;@;@;i]; ;!o;(;i ;[o;;i ;	["padding-bottom;[ ;o;;i;@;[ ;i`;["px;"	12px;@;@;i`; ;!;@;@;)["h5;i_;*o;+;@;i_;,[o;-;,[o;.
 ;/0;@;0o;1;2{ ;i_;,[o;:	;	["h5;@;i_;40;'To;(;i ;[o;;i ;	["padding-bottom;[ ;o;;i%;@;[ ;ic;["px;"	32px;@;@;ic; ;!;@;@;)["h5 + p;ib;*o;+;@;ib;,[o;-;,[o;.
