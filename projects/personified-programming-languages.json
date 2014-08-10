@@ -1,14 +1,14 @@
 {
     "name": "Personified Programming Languages",
-    "description": "LALALA",
+    "description": "<p>A tongue-in-cheek drawing series featuring personified programming languages, most of which were inspired by the characterizations in <a href='https://www.quora.com/Programming-Languages/In-laymans-terms-what-are-the-major-programming-languages-and-what-are-they-used-for/answer/Isaac-Lewis' target='_blank'>this Quora answer</a>.</p><p>The OCaml character was my own concoction. The mirror was inspired by the concept of recursion, the hipster glasses were inspired by the seeming obscureness of the language (\"I program in OCaml... you've probably never heard of it\"), and the cow print boots were inspired by Professor Morrisett's cow obsession.",
     "photos": [
     	{
     		"url": "images/personified2.png",
     		"ratio": "125.7%"
     	},
     	{
-    		"url": "images/personified3.png",
-    		"ratio": "150%"
+    		"url": "images/personified3.jpg",
+    		"ratio": "163.64%"
     	},
     	{
     		"url": "images/personified1.png",

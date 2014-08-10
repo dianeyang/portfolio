@@ -18,7 +18,7 @@
 
 <div id="projects" class="clearfix">
 	<ul class="inline-list" isotope-container>
-		<li ng-repeat="proj in projects" class="project {{proj.type}}" style="background-image: url('{{proj.image}}')" staggered-fade-in>
+		<li ng-repeat="proj in projects" id={{proj.slug}} class="project {{proj.type}}" style="background-image: url('{{proj.image}}')" staggered-fade-in>
 			<div class="inner">
 				<div class="mask"></div>
 				<a href="#/work/{{proj.slug}}">

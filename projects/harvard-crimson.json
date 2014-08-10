@@ -1,6 +1,29 @@
 {
     "name": "The Harvard Crimson",
-    "description": "LALALA",
-    "photos": [],
-    "technologies": ["Pen & Paper", "Adobe Photoshop"]
+    "description": "In fall 2013, I was an illustrator for the Harvard Crimson, illustrating weekly opinion columns. Some of my work can be seen here, and the rest can be found on the Crimson's website.",
+    "photos": [
+    	{
+    		"url": "images/crimson1.jpg",
+    		"ratio": "122.27%"
+    	},
+    	{
+    		"url": "images/crimson2.jpg",
+    		"ratio": "114.33%"
+    	},
+    	{
+    		"url": "images/crimson3.jpg",
+    		"ratio": "74.71%"
+    	},
+    	{
+    		"url": "images/crimson4.jpg",
+    		"ratio": "111.89%"
+    	},
+    	{
+    		"url": "images/crimson5.jpg",
+    		"ratio": "129.62%"
+    	}
+    ],
+    "technologies": ["Pen & Paper", "Adobe Photoshop"],
+    "link": "http://www.thecrimson.com/writer/1210611/Diane__Yang/",
+    "linkText": "View on The Harvard Crimson"
 }

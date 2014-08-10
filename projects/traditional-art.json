@@ -1,6 +1,25 @@
 {
     "name": "Traditional Art",
-    "description": "LALALA",
-    "photos": [],
-    "technologies": ["a","b","c"]
+    "description": "<p>From ages 8 to 18, I studied traditional media of art at Artistic Minds Art Studio in Brookfield, CT. Some samples of some of my traditional artwork are shown here. More can be found on my Carbonmade (link above).</p><p>I am experienced in a wide variety of media, but my favorites are the wonderfully messy chalk pastels and charcoal.</p>",
+    "photos": [
+    	{
+    		"url": "images/traditional4.jpg",
+    		"ratio": "139.32%"
+    	},
+    	{
+    		"url": "images/traditional1.jpeg",
+    		"ratio": "125%"
+    	},
+    	{
+    		"url": "images/traditional3.jpeg",
+    		"ratio": "133.73%"
+    	},
+    	{
+    		"url": "images/traditional2.jpeg",
+    		"ratio": "80%"
+    	}
+    ],
+    "technologies": ["Oil paint", "Ink", "Chalk pastel", "Various other media"],
+    "link": "http://dianeyang.carbonmade.com/projects/4338839",
+    "linkText": "View more on Carbonmade"
 }

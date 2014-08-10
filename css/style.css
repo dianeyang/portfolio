@@ -105,6 +105,9 @@ ul.small-spaced-links {
     #header #bars i {
       padding: 4px 5px 2px 5px;
       background-color: white; }
+    #header #bars #close-nav {
+      padding: 1px 7px 0 6px;
+      background-color: white; }
   #header #navigation {
     float: right;
     margin-top: 4px; }
@@ -170,6 +173,8 @@ ul.small-spaced-links {
   padding-bottom: 25%;
   position: relative;
   background-size: cover; }
+  #projects li.project#traditional-art, #projects li.project #hurc {
+    background-position: center; }
   #projects li.project .inner a, #projects li.project .inner .mask, #projects li.project .inner .info-container {
     position: absolute;
     top: 0;
@@ -261,8 +266,8 @@ ul.small-spaced-links {
   font-size: 16px;
   list-style: initial;
   margin: initial;
-  padding: 0 0 1em 40px;
-  height: 200px;
+  padding-left: 40px;
+  height: auto;
   transition: 0.2s height linear;
   overflow: hidden; }
   #resume-full #course-list.ng-hide {

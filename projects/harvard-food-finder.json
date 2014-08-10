@@ -1,8 +1,8 @@
 {
     "name": "Harvard Food Finder",
-    "description": "lalala",
+    "description": "<p>An automated website that uses machine learning to find free food opportunities on campus, then extracts the event details and posts them online. It originated as a CS50 final project, but my partner and I continued working on it afterwards.</p><p>I implemented the Bayesian classifier that I trained to detect emails sent over Harvard mailing lists that mentioned free food, inspired by Bayesian spam filters. In addition, I designed the web app portion of the project.</p>Food Finder was featured in the <a href='https://www.youtube.com/watch?v=H3Svg0lUmYo&t=37s' target='_blank'>Harvard Gazette</a>. It was later one of the 15 projects into HackHarvard Hack Week 2013 out of a pool of about 50 projects.<p>",
     "photos": [],
     "technologies": ["Python", "SQL", "PHP", "JavaScript", "HTML/CSS"],
-    "link": "http://www.harvardfoodfinder.com",
-    "linkText": "View live"
+    "link": "https://www.youtube.com/watch?v=XlSqFAwChTQ",
+    "linkText": "View demo video"
 }

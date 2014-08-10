@@ -1,14 +1,14 @@
 {
     "name": "Harvard University Robotics Club",
-    "description": "LALALA",
+    "description": "<p>Designed a logo for the Harvard University Robotics Club to be printed on T-shirts and promotional material. Aimed for a very industrial, detail-oriented feel.",
     "photos": [
     	{
     		"url": "images/hurc1.png",
-    		"ratio": "25.8%"
+    		"ratio": "28%"
     	},
     	{
     		"url": "images/hurc2.png",
-    		"ratio": "108.4%"
+    		"ratio": "107.14%"
     	}
     ],
     "technologies": ["Adobe Illustrator"]

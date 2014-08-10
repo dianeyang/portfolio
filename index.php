@@ -8,7 +8,7 @@
 
 	        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	        <base href="//localhost:8000/" />
+	        <base href="//dianeyang.herokuapp.com/" />
 	        <link rel="stylesheet" href="css/reset.css" type="text/css" />
 	        <link rel="stylesheet" href="css/style.css" type="text/css" />
 
@@ -58,7 +58,8 @@
 					</li>
 				</ul>
 				<div id="bars" ng-init="expanded=false" ng-click="expanded=!expanded">
-					<i class="fa fa-bars"></i>
+					<i class="fa fa-bars" ng-show="!expanded"></i>
+					<span id="close-nav" ng-show="expanded">&#x2715;</span>
 				</div>
 			</div>
 		</div>
