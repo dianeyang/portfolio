@@ -1,6 +1,6 @@
 {
     "name": "Textify",
-    "description": "<p>Worked in team of 4 to implement a neural network for optical character recognition of typed text as a final project for CS 51.</p><p>The network took in 20x20 pixel images of letters and was trained to identify lowercase letters, uppercase letters, and periods. Thus, it had 400 input nodes and 53 output nodes. We decided to have 60 hidden nodes as a compromise between speed and accuracy (we also experimented with 30 and 90).</p><p>The network was a feedforward neural network with back-propagation. Thus, to train the neurons, inputs were fed through the network, then the errors were calculated and back-propagated through the network to adjust the weights of each of the edges.",
+    "description": "<p>Worked in team of 4 to implement a feedforward neural network for optical character recognition of typed text as a final project for CS 51.</p><p>The network took in 20x20 pixel images of letters and was trained to identify lowercase letters, uppercase letters, and periods. Thus, it had 400 input nodes and 53 output nodes, plus a hidden layer of 60 nodes.</p>",
     "photos": [
     	{
     		"url": "images/textify1.png",

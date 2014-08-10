@@ -35,11 +35,11 @@
     "shortDescription": "Drawing series"
   },
   {
-    "name": "The Harvard Crimson",
-    "slug": "harvard-crimson",
-    "type": "art",
-    "image": "images/crimson1.jpg",
-    "shortDescription": "Illustrations"
+    "name": "Harvard Food Finder",
+    "slug": "harvard-food-finder",
+    "type": "code",
+    "image": "images/get-prepped2.jpg",
+    "shortDescription": "Bayesian classifier & web app"
   },
   {
     "name": "Hocus",
@@ -63,11 +63,11 @@
     "shortDescription": "Graphic design"
   },
   {
-    "name": "Harvard Food Finder",
-    "slug": "harvard-food-finder",
-    "type": "code",
-    "image": "images/get-prepped2.jpg",
-    "shortDescription": "Bayesian classifier & web app"
+    "name": "The Harvard Crimson",
+    "slug": "harvard-crimson",
+    "type": "art",
+    "image": "images/crimson1.jpg",
+    "shortDescription": "Illustrations"
   },
   {
     "name": "Harvard University Robotics Club",
