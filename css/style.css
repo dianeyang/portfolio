@@ -340,7 +340,7 @@ form[name='emailForm'] input, form[name='emailForm'] textarea {
   -webkit-appearance: none;
   border-radius: 0; }
 form[name='emailForm'] input[type=submit] {
-  background-color: #6cb39e;
+  background-color: #ababab;
   width: 120px;
   font-weight: 300; }
 form[name='emailForm'] textarea {

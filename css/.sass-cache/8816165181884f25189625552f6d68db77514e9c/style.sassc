@@ -1,6 +1,6 @@
 3.2.9 (Media Mark)
-f30c087da3c3e676ff4e12471a8d090375140aac
-o:Sass::Tree::RootNode	:@template"ª%$break1: 624px
+9e5d83b458981ade15390ddabd4ca5834e8d953a
+o:Sass::Tree::RootNode	:@template"Ω%$break1: 624px
 $break2: 1024px
 
 $darkGrey: #444
@@ -435,7 +435,7 @@ form[name='emailForm']
 		border-radius: 0
 
 	input[type=submit]
-		background-color: $teal
+		background-color: #ABABAB
 		width: 120px
 		font-weight: 300
 
@@ -901,7 +901,7 @@ hover;;=;@;i§;>0;'T;@;@;)["#social-icons;iÅ;*o;+;@;iÅ;,[o;
 width;[ ;o;;ii;@;[ ;i©;["%;"	100%;@;@;i©; ;!o;;i ;	["font-family;[ ;o;	;;&;"inherit;@;i™;@;@;i™; ;!o;;i ;	["font-size;[ ;o;	;;&;"inherit;@;i´;@;@;i´; ;!o;;i ;	["border;[ ;o;;i ;@;@~;i¨;[ ;"0;@;@;i¨; ;!o;;i ;	["margin-top;[ ;o;;i;@;[ ;i≠;["px;"	12px;@;@;i≠; ;!o;;i ;	["padding;[ ;o;;i;@;[ ;iÆ;["px;"8px;@;@;iÆ; ;!o;;i ;	["background-color;[ ;o;5	;6"techsBackground;	"techsBackground;@;iØ;@;@;iØ; ;!o;;i ;	["-webkit-appearance;[ ;o;	;;&;"	none;@;i∞;@;@;i∞; ;!o;;i ;	["border-radius;[ ;o;;i ;@;@~;i±;[ ;"0;@;@;i±; ;!;@;@;)["input, textarea;i®;*o;+;@;i®;,[o;-;,[o;.
 ;/0;@;0o;1;2{ ;i®;,[o;:	;	["
 input;@;i®;40o;-;,[o;.
-;/0;@;0o;1;2{ ;i®;,[o;:	;	["textarea;@;i®;40;'To;(;i ;[o;;i ;	["background-color;[ ;o;5	;6"	teal;	"	teal;@;i¥;@;@;i¥; ;!o;;i ;	["
+;/0;@;0o;1;2{ ;i®;,[o;:	;	["textarea;@;i®;40;'To;(;i ;[o;;i ;	["background-color;[ ;o;	;0;@;i¥;{	;i;i´;i´;i´;@;@;i¥; ;!o;;i ;	["
 width;[ ;o;;i};@;[ ;iµ;["px;"
 120px;@;@;iµ; ;!o;;i ;	["font-weight;[ ;o;;i,;@;@~;i∂;[ ;"300;@;@;i∂; ;!;@;@;)["input[type=submit];i≥;*o;+;@;i≥;,[o;-;,[o;.
 ;/0;@;0o;1;2{ ;i≥;,[o;:	;	["
