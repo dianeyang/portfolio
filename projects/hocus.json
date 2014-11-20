@@ -1,6 +1,6 @@
 {
     "name": "Hocus",
-    "description": "<p>Worked on a team of 4 to create a camera app for Android that that takes advantage of AirTouch technology to allow users to focus their images without tapping on the screen. This makes it much easier to produce clear, steady images and video because touching the screen causes the camera to shake.</p><p>Won a prize for Most Innovative Use of Hover at HackMIT.</p>",
+    "description": "<p>Worked on a team of 4 to design and prototype a camera app for Android at HackMIT 2013. The app takes advantage of AirTouch technology to allow users to focus their images by hovering their finger over the area of the image that should be focused. This makes it much easier to produce clear, steady images (especially when producing video) because the touchless interaction allows you to refocus the image without causing camera to shake.</p><p>Won a prize for Most Innovative Use of Hover.</p>",
     "photos": [
     	{
     		"url": "images/hocus1.jpeg",
