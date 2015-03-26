@@ -1,0 +1,19 @@
+{
+    "name": "Collision Simulator",
+    "description": "<p>As a final project for CS 175 (Computer Graphics), my partner and I implemented a real-time rigid body simulator with collision detection. The code simulates the physics of dropping cubes (up to a few hundred) into a box.</p><p>The cubes are modeled conceptually as a grid of particles attached to each other with springs. At each time step of the simulation, we update the forces, linear momentum, and angular momentum of the bodies, and use those to determine the change in the cubes' positions and rotations.</p><p>To speed things up, we also implemented a grid data structure to reduce the time complexity of searching for collisions from O(n^2) to O(n).</p><p>The images here show snapshots of what the beggining, middle, and end of a simulation might look like.",
+    "photos": [
+    	{
+    		"url": "images/cubes1.png",
+    		"ratio": "100%"
+    	},
+    	{
+    		"url": "images/cubes2.jpeg",
+    		"ratio": "100%"
+    	},
+        {
+            "url": "images/cubes3.jpeg",
+            "ratio": "100%"
+        }
+    ],
+    "technologies": ["C++", "OpenGL", "GLSL"]
+}

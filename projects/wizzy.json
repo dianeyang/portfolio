@@ -1,0 +1,15 @@
+{
+    "name": "Wizzy",
+    "description": "<p><a href='http://www.getwizzy.com/' target='_blank'>Wizzy</a> is a social app that allows users to create and share hilarious music videos with friends. You record a shot video, the app automatically attaches music for comedic effect, and you send it off.</p><p>I worked alongside the engineering team to design marketing graphics, including the wizard mascot, logo, and laptop stickers.</p>",
+    "photos": [
+    	{
+    		"url": "images/wizzy1.png",
+    		"ratio": "158.2%"
+    	},
+    	{
+    		"url": "images/wizzy2.png",
+    		"ratio": "100%"
+    	}
+    ],
+    "technologies": ["Adobe Illustrator"]
+}

@@ -1,5 +1,19 @@
 [
   {
+    "name": "Collision Simulator",
+    "slug": "collision-simulator",
+    "type": "code",
+    "image": "images/cubes2.jpeg",
+    "shortDescription": "Computer graphics project"
+  },
+  {
+    "name": "Wizzy",
+    "slug": "wizzy",
+    "type": "design",
+    "image": "images/wizzy3.png",
+    "shortDescription": "Logo & mascot design"
+  },
+  {
     "name": "Get Prepped",
     "slug": "get-prepped",
     "type": "code",
