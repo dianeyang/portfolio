@@ -1,5 +1,12 @@
 [
   {
+    "name": "Linkage Curve Matching",
+    "slug": "linkage-curves",
+    "type": "code",
+    "image": "images/linkage4.png",
+    "shortDescription": "Computational fabrication project"
+  },
+  {
     "name": "Collision Simulator",
     "slug": "collision-simulator",
     "type": "code",
