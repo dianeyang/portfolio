@@ -1,6 +1,6 @@
 {
-    "name": "Four-bar Linkage Curve Matching",
-    "description": "<p>For the final project for 6.S079 (Computational Fabrication at MIT), my partner and I built a way to generate and simulate four-bar linkages with a coupler point that traces a desired path.</p><p>Image 1: The user clicks and drags Bezier splines to specify the desired path.</p> Image 2 + 3: A genetic algorithm optimizes the lengths of the four bars and the position of the coupler point under certain constraints. We measure fitness using 'signature curves' (normalized arc length vs. curvature), which we align and scale to match as closely as possible. Thus the signature curves are insensitive to differences rotation, translation, and scaling in the actual curves.</p><p>Image 4: The program visualizes a simulation of the output linkage and produces and SVG file for laser cutting.</p>",
+    "name": "Four-bar Linkage Synthesis",
+    "description": "<p>For the final project for 6.S079 (Computational Fabrication at MIT), my partner and I built a way to generate and simulate four-bar linkages with a coupler point that traces a desired path.</p><p>Image 1: The user clicks and drags Bezier splines to specify the desired path.</p><p>Image 2 + 3: A genetic algorithm optimizes the lengths of the four bars and the position of the coupler point. We measure fitness using 'signature curves' (normalized arc length vs. curvature), which we align and scale to match as closely as possible. Thus the signature curves are insensitive to differences rotation, translation, and scaling in the actual curves.</p><p>Image 4: The program visualizes a simulation of the output linkage and produces and SVG file for laser cutting.</p>",
     "photos": [
     	{
     		"url": "images/linkage1.png",
