@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d4a15fd782cf79e0b827060efb523ec9",
+    "content-hash": "d24a60eaa44053790c65c7b09363c3f8",
     "packages": [
         {
             "name": "mashape/unirest-php",
@@ -53,7 +53,7 @@
                 "http",
                 "rest"
             ],
-            "time": "2014-04-05 23:28:21"
+            "time": "2014-04-05T23:28:21+00:00"
         },
         {
             "name": "sendgrid/sendgrid",
@@ -99,7 +99,7 @@
                 "send",
                 "sendgrid"
             ],
-            "time": "2014-04-18 17:23:19"
+            "time": "2014-04-18T17:23:19+00:00"
         },
         {
             "name": "sendgrid/smtpapi",
@@ -147,24 +147,15 @@
                 "smtpapi",
                 "xsmtp"
             ],
-            "time": "2014-01-01 01:37:15"
+            "time": "2014-01-01T01:37:15+00:00"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": [],
     "prefer-stable": false,
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
 }
